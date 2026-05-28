@@ -490,7 +490,8 @@
                             <span class="material-symbols-outlined text-white text-[24px]">memory</span>
                         </div>
                         <h4 class="font-headline-md text-[18px] mb-3">Intro to AI</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">From machine learning to neural networks: understand how AI actually thinks.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">From machine
+                            learning to neural networks: understand how AI actually thinks.</p>
                         <div
                             class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
                         </div>
@@ -517,7 +518,8 @@
                             <span class="material-symbols-outlined text-white text-[24px]">bar_chart</span>
                         </div>
                         <h4 class="font-headline-md text-[18px] mb-3">Data Analysis with AI</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Process large datasets quickly and turn raw numbers into useful insights.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Process large
+                            datasets quickly and turn raw numbers into useful insights.</p>
                         <div
                             class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
                         </div>
@@ -530,7 +532,8 @@
                             <span class="material-symbols-outlined text-white text-[24px]">chat_bubble</span>
                         </div>
                         <h4 class="font-headline-md text-[18px] mb-3">Natural Language Processing</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The tech behind ChatGPT, voice assistants, and smart search, demystified.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The tech behind
+                            ChatGPT, voice assistants, and smart search, demystified.</p>
                         <div
                             class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
                         </div>
@@ -557,7 +560,8 @@
                             <span class="material-symbols-outlined text-white text-[24px]">settings_suggest</span>
                         </div>
                         <h4 class="font-headline-md text-[18px] mb-3">Automation &amp; Workflows</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Build tools that work for you and automate boring tasks with no-code and low-code AI.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Build tools that
+                            work for you and automate boring tasks with no-code and low-code AI.</p>
                         <div
                             class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
                         </div>
@@ -570,7 +574,8 @@
                             <span class="material-symbols-outlined text-white text-[24px]">video_library</span>
                         </div>
                         <h4 class="font-headline-md text-[18px] mb-3">Image &amp; Video AI</h4>
-                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">How AI sees the world: image recognition, video analysis, and real applications.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">How AI sees the
+                            world: image recognition, video analysis, and real applications.</p>
                         <div
                             class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
                         </div>
@@ -887,12 +892,13 @@
                 <!-- 3. Parent's WhatsApp Number -->
                 <div class="flex flex-col gap-1.5">
                     <label for="parent-whatsapp"
-                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp Number (with Country Code)</label>
+                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp Number
+                        (with Country Code)</label>
                     <div class="relative">
                         <span
                             class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
                         <input type="tel" id="parent-whatsapp" name="whatsapp" required
-                            placeholder="e.g. +1 555 123 4567 (include + country code)"
+                            placeholder="e.g. +1 555 123 4567 (include country code)"
                             class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
                     </div>
                 </div>
@@ -945,7 +951,8 @@
                 <div>
                     <h4 class="font-bold text-on-background text-2xl">Demo Call Requested! 🎉</h4>
                     <p class="text-sm text-on-surface-variant mt-2 max-w-sm mx-auto">
-                        Thank you! Arjun or Priya will reach out to you on WhatsApp within <span class="font-semibold text-primary">2 hours</span> to confirm the
+                        Thank you! Arjun or Priya will reach out to you on WhatsApp within <span
+                            class="font-semibold text-primary">2 hours</span> to confirm the
                         specific time slot for <span id="success-child-name" class="font-bold text-primary">your
                             child</span>.
                     </p>
@@ -1178,13 +1185,13 @@
                     },
                     body: formData.toString()
                 })
-                .then(() => {
-                    showSuccessScreen();
-                })
-                .catch(err => {
-                    console.error('Submission error:', err);
-                    showSuccessScreen();
-                });
+                    .then(() => {
+                        showSuccessScreen();
+                    })
+                    .catch(err => {
+                        console.error('Submission error:', err);
+                        showSuccessScreen();
+                    });
             } else {
                 // Fallback Mock Mode: Save locally in localStorage for testing
                 const payload = { childName, grade, whatsapp, bestTime };
