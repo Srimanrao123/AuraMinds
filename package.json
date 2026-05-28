@@ -1,0 +1,15 @@
+{
+  "name": "auraminds-landing-page",
+  "version": "1.0.0",
+  "description": "Prepare Your Child for the AI Future - AuraMinds landing page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

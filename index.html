@@ -1,0 +1,647 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title class="">AuraMinds | Prepare Your Child for the AI Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#d3bbff",
+                        "primary-fixed-dim": "#d3bbff",
+                        "tertiary-container": "#5f4500",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#c7aaff",
+                        "primary-fixed": "#ebddff",
+                        "secondary-fixed-dim": "#d3bbff",
+                        "on-error-container": "#93000a",
+                        "outline": "#7b7485",
+                        "on-tertiary-container": "#e9af0a",
+                        "inverse-on-surface": "#f5eeff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#8b4ef7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e8defb",
+                        "on-secondary-container": "#fffbff",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#713dcc",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-surface": "#1d182d",
+                        "surface-container-highest": "#e8defb",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f3eaff",
+                        "inverse-surface": "#332d43",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ebddff",
+                        "on-secondary-fixed-variant": "#5b00c5",
+                        "background": "#fdf7ff",
+                        "on-background": "#1d182d",
+                        "outline-variant": "#ccc3d6",
+                        "on-secondary-fixed": "#250059",
+                        "primary-container": "#5b21b6",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface": "#fdf7ff",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fdf7ff",
+                        "secondary": "#712edd",
+                        "tertiary": "#433000",
+                        "surface-container-low": "#f8f1ff",
+                        "primary": "#420093",
+                        "surface-dim": "#dfd6f2",
+                        "on-primary-fixed": "#250059"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "section-v-md": "80px",
+                        "max-width": "1280px",
+                        "section-v-lg": "100px",
+                        "margin-desktop": "auto"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Sora"],
+                        "headline-md": ["Sora"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Sora"],
+                        "headline-lg-mobile": ["Sora"],
+                        "headline-lg": ["Sora"],
+                        "display-lg": ["Sora"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fdf7ff;
+            color: #1d182d;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .grid-pattern {
+            background-image: linear-gradient(to right, rgba(91, 33, 182, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(91, 33, 182, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .soft-glow {
+            box-shadow: 0px 12px 32px rgba(91, 33, 182, 0.08);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-headline-md font-display-lg text-primary tracking-tight">AuraMinds</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-tertiary-container font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#program">Program</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#how-it-works">How It Works</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply Now</a>
+</div>
+<a class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 hover:shadow-md transition-all duration-300 active:scale-95 inline-block" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply for Free</a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- HERO SECTION -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-section-v-md">
+<!-- Decorative mesh gradient -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/10 -z-10"></div>
+<div class="max-w-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col items-start gap-8">
+<div class="bg-secondary-fixed px-4 py-1.5 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+<span class="font-label-md text-label-md text-primary">Only 5 Slots Available This Batch</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
+                        Prepare Your Child for the <span class="text-primary">AI Future</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">1-on-1 live classes with real developers. For Grade 7–12 students. Master the tools that are changing the world.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-[#FBBF24] text-[#1d182d] px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:scale-105 hover:shadow-lg transition-all duration-300 inline-block" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply Now — It's Free</a>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:bg-primary/5 transition-all duration-300">
+                            See How It Works
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full group-hover:bg-primary/20 transition-all duration-500"></div>
+<img alt="Student using laptop with floating AI elements" class="relative rounded-2xl w-full object-cover soft-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiQ6LwYnTCPzHXaR_xc8v8cEA8pW6US_Hs8QetAfDtCfEo7ntRdlqRC-w5xaxuhWENTGbVFodpllkUY9RTD6kmo0iI-siUq1NI9ebaeMCwmYNYp9W8PKxqLBVY9loUmuByx9rnTrRgwqyrwgzYu7ckHt4D8Rv6bS7Vj1ndHXpcPoZcbzsJG7vEAQahw981TsjqY4BeJDCds8UwmwGkzbOvph8hN5lLXoqWlQKm2LYju-0F9mfUitly7wsohhhnCBYji-hrB-mK99w">
+</div>
+</div>
+</section>
+<!-- TRUST BAR -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant">
+<div class="max-w-max-width mx-auto px-gutter text-center">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-8">What students learn in just 4 weeks:</p>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+<span class="font-headline-md text-body-md font-bold">Build Real AI Projects</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">speed</span>
+<span class="font-headline-md text-body-md font-bold">Improve Productivity</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">psychology</span>
+<span class="font-headline-md text-body-md font-bold">Build Confidence</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">present_to_all</span>
+<span class="font-headline-md text-body-md font-bold">Present Live to Parents</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT THE PROGRAM -->
+<section class="py-section-v-lg px-gutter max-w-max-width mx-auto" id="program">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">THE PROGRAM</span>
+<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Not Just Another Coding Class</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-[32px]">video_chat</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Live 1-on-1 Classes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Personalized attention from professional developers who guide your child through every complex concept.</p>
+</div>
+<!-- Card 2 -->
+<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active" style="transition-delay: 100ms;">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-[32px]">handyman</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Hands-On Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We move past theory quickly. Students spend 80% of their time actually building and coding.</p>
+</div>
+<!-- Card 3 -->
+<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active" style="transition-delay: 200ms;">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-[32px]">rocket</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Real Projects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">From chatbots to personal assistants, your child creates portfolio-ready projects they can show off.</p>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="bg-surface-container py-section-v-lg" id="how-it-works">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background">How It Works</h2>
+</div>
+<div class="relative flex flex-col md:flex-row justify-between gap-8 md:gap-4">
+<!-- Progress Line (Desktop) -->
+<div class="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-outline-variant -z-10"></div>
+<!-- Step 1 -->
+<div class="reveal flex-1 text-center group active">
+<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">1</div>
+<h4 class="font-headline-md text-[18px] mb-2">Apply Online</h4>
+<p class="font-body-md text-body-md text-on-surface-variant px-4">Tell us about your child's interest and goals.</p>
+</div>
+<!-- Step 2 -->
+<div class="reveal flex-1 text-center group active" style="transition-delay: 100ms;">
+<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">2</div>
+<h4 class="font-headline-md text-[18px] mb-2">Get Selected</h4>
+<p class="font-body-md text-body-md text-on-surface-variant px-4">Our developers review applications for the right fit.</p>
+</div>
+<!-- Step 3 -->
+<div class="reveal flex-1 text-center group active" style="transition-delay: 200ms;">
+<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">3</div>
+<h4 class="font-headline-md text-[18px] mb-2">Live 1-on-1 Sessions</h4>
+<p class="font-body-md text-body-md text-on-surface-variant px-4">Learn coding and AI from industry pros at your own pace.</p>
+</div>
+<!-- Step 4 -->
+<div class="reveal flex-1 text-center group active" style="transition-delay: 300ms;">
+<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">4</div>
+<h4 class="font-headline-md text-[18px] mb-2">Build &amp; Present</h4>
+<p class="font-body-md text-body-md text-on-surface-variant px-4">Showcase the AI project to family and friends.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- MEET YOUR MENTORS -->
+<section class="py-section-v-lg px-gutter">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-primary font-bold tracking-widest uppercase">YOUR MENTORS</span>
+<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Taught by Developers Who Actually Build with AI</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                Not teachers. Not instructors. Real developers working on real products — who also love teaching kids.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mentor 1 -->
+<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="relative mb-6">
+<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+<img alt="Arjun Mehta" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wVWlIWx2uZZH_ykS3SGLMWstxw7Pyy0mmKwfO3hd7HPLJ_4Qrj5aMAt-T9WHLQfjEqWWfx-ph-fV3akh89Dj52hF-hnvzZ6EkVWFGH3D3qcpt1tcCUa_3oasHbB0PPhohVQeNYUdJvQbUdcxtBcIbqQF-TqvmGGPCinHz9XTVTjb_UmBQy3coLRmK_FZcM2zduzpxOTag5TD1BaCg0XTOwxweyhgz3LeSB_EFT4dLU-5UG7zwOOfA4fPOwoLxXeLCUVttQ3Ojjo">
+</div>
+<h3 class="font-headline-md text-headline-md mb-1">Arjun Mehta</h3>
+<p class="font-label-md text-primary mb-4">Full Stack Developer — 5 years experience</p>
+<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+<span class="">🔨</span> Currently building: AI-powered SaaS dashboard
+                </div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                    Arjun builds production apps used by thousands of users daily. He mentors because he wishes he had someone like this at age 15.
+                </p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">React</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Node.js</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">OpenAI API</span>
+</div>
+</div>
+<!-- Mentor 2 -->
+<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="relative mb-6">
+<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+<img alt="Priya Nair" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPzKIIMV1uZqS1vyEbKb9eBSiI4J47Xi8xC0Wo7uiw-IqwJ3789xoCiYZQa4mrA9bD2bHIKGACWSXAolERO7rNL4m0Pf1NZYRYZsSPk90ZTi5Y8-fQJeKiHSIU3vZoxTzQNiKd-Cth5matvmuS2aA99XaZcJc95eLCczHdbfg1hCRkLt-1u3ORxcRfb6oyKj2wuJwRVP4YfL71gy9rK4PXP43FoaZKs8bATbmJrlYKj40H2igQzyB2zbVk44Y-6RBPdtGKA75d4g">
+</div>
+<h3 class="font-headline-md text-headline-md mb-1">Priya Nair</h3>
+<p class="font-label-md text-primary mb-4">Automation Engineer — 4 years experience</p>
+<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+<span class="">🔨</span> Currently building: No-code AI workflow tools
+                </div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                    Priya specializes in making AI practical and accessible. She turns complex concepts into things students can build in a weekend.
+                </p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Zapier</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">LangChain</span>
+</div>
+</div>
+<!-- Mentor 3 -->
+<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="relative mb-6">
+<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+<img alt="Rahul Sharma" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXfm85H_IpHTp3mIHYciWCO8DxS4xU4mqC-s0kJXoEVTiiq6P8uOkNYuSi5cpRJd_EiDVQ1g3QnnGcw9OFFI47syo9ZlUIQN0S_9YG4xt8bx3mqbGJV2rQLUcH3WtZ8mK4I9fFcA33lCZeFYDBu7PWsh_ZMlvzkC1EaJKEz9YflmMgmNdHjFqyqTeUV_5MHBOy3R1hB2UZpgH67uC2DFPbufFXbFmrrkCEhFRzcbCB9dwEgMydW1Dlap94xT8MVxNDWgvwKKD0II">
+</div>
+<h3 class="font-headline-md text-headline-md mb-1">Rahul Sharma</h3>
+<p class="font-label-md text-primary mb-4">AI/ML Developer — 6 years experience</p>
+<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+<span class="">🔨</span> Currently building: Computer vision app for retail
+                </div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                    Rahul has shipped models to real clients across 3 countries. He believes the best way to learn AI is to build something that actually works.
+                </p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">TensorFlow</span>
+<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Prompt Engineering</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[#EDE9FE] py-16">
+<div class="max-w-max-width mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-center mb-12 text-on-background">Why Our Mentors Are Different</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-white text-[24px]">bolt</span>
+</div>
+<h4 class="font-bold mb-2">Active in Industry</h4>
+<p class="text-body-md text-on-surface-variant px-2">They don't just know theory — they ship code weekly.</p>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-white text-[24px]">target</span>
+</div>
+<h4 class="font-bold mb-2">Project-First Teaching</h4>
+<p class="text-body-md text-on-surface-variant px-2">Every session is built around something you'll actually make.</p>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-white text-[24px]">handshake</span>
+</div>
+<h4 class="font-bold mb-2">1-on-1 Attention</h4>
+<p class="text-body-md text-on-surface-variant px-2">No class of 30. Just you and your mentor, focused entirely on your growth.</p>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-white text-[24px]">public</span>
+</div>
+<h4 class="font-bold mb-2">Real-World Context</h4>
+<p class="text-body-md text-on-surface-variant px-2">They bring real problems from real projects into every lesson.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT YOU'LL LEARN SECTION -->
+<section class="py-section-v-lg bg-gradient-to-br from-[#FAF5FF] to-[#FDF2F8]">
+<div class="max-w-max-width mx-auto px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-[#5B21B6] uppercase tracking-widest font-bold">THE CURRICULUM</span>
+<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">A Syllabus Built for the Real World</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                We cover the foundations — but we never stop at them. If something exciting drops in AI this week, we teach it this week.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden border-b-[3px] border-b-transparent active" style="border-image: linear-gradient(to right, #EF4444, #3B82F6) 1;">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">memory</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">Intro to AI</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">From machine learning to neural networks — understand how AI actually thinks.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 2 (FEATURED) -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden border-2 border-[#3B82F6] active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">work</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">AI for Business &amp; Productivity</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI tools to work smarter, automate tasks, and solve real problems.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 3 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">bar_chart</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">Data Analysis with AI</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Process large datasets quickly — turn raw numbers into useful insights.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 4 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">chat_bubble</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">Natural Language Processing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The tech behind ChatGPT, voice assistants, and smart search — demystified.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 5 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">verified_user</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">AI Ethics &amp; Responsibility</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI wisely. Understand bias, privacy, and what it means to build responsibly.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 6 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">settings_suggest</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">Automation &amp; Workflows</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Build tools that work for you — automate boring tasks with no-code and low-code AI.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 7 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">video_library</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">Image &amp; Video AI</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">How AI sees the world — image recognition, video analysis, and real applications.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+<!-- Card 8 -->
+<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-[24px]">smart_toy</span>
+</div>
+<h4 class="font-headline-md text-[18px] mb-3">AI in Gaming &amp; Creativity</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Generate art, music, and game logic using AI. Create things that didn't exist before.</p>
+<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
+</div>
+</div>
+<!-- LIVING SYLLABUS BANNER -->
+<div class="mt-12 bg-[#FFFBEB] rounded-[16px] border-l-4 border-[#FBBF24] p-8 flex flex-col md:flex-row items-center gap-6">
+<div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[#1d182d] text-[24px] font-bold">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] font-bold text-on-background mb-1">This syllabus is alive.</h4>
+<p class="font-body-md text-on-surface-variant">AI moves fast — and so do we. We update projects and tools weekly to ensure you're learning what's relevant right now.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHO IS THIS FOR -->
+<section class="py-section-v-lg max-w-max-width mx-auto px-gutter overflow-hidden" id="program">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="reveal active">
+<h2 class="font-headline-lg text-headline-lg mb-8">Built for Curious, Ambitious Students</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Grade 7-12 Students</h4>
+<p class="text-on-surface-variant text-body-md">Optimized curriculum for middle and high school minds.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">No coding experience required</h4>
+<p class="text-on-surface-variant text-body-md">We start from the basics and scale up fast with AI tools.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Students who want to build, not watch</h4>
+<p class="text-on-surface-variant text-body-md">Ditch the passive tutorials for active creation.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Master AI Generation</h4>
+<p class="text-on-surface-variant text-body-md">Learn to prompt and build using the latest LLM technologies.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="reveal relative flex justify-center active">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+<img alt="Profile of a student project card" class="relative max-w-md w-full soft-glow rounded-3xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwb4Hs3wM-i2GTuXUrcoCVoLSUSf5sZTVpvtw0WLDbqHujbxg-YCZzU_EVHapVx0OJDHx45td0j5_X5cR7ZioFpv-2LpKF-6YPtNO-xFgCzW1FhKSxIsDH-2Er20NmwMEC29rxcQRv5XlamHDa-XhYxXZgfNXRw_2EPcKyIrPt62DUv4XhC09cuNHJT3mq_FczH4D6jJsYdsbPXc0UoGd4rNfJgwApDJWKN8NCDlpsP-902BIDeBKqykx7TUB69mzzXmtgzmc9A8c">
+</div>
+</div>
+</section>
+<!-- URGENCY BANNER -->
+<section class="bg-[#0F0A1E] py-16 px-gutter">
+<div class="max-w-max-width mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-2">Limited Slots Available</h2>
+<p class="text-on-primary-container text-body-lg">Only 5 students will be selected for this exclusive cohort.</p>
+</div>
+<a class="bg-[#FBBF24] text-[#0F0A1E] px-10 py-5 rounded-full font-display-lg text-body-lg font-bold hover:scale-105 transition-transform flex items-center gap-2 justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">
+                    Apply for Free 
+                    <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-section-v-lg px-gutter max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-center mb-12">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        Is this really free?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Yes! The initial 4-week cohort is completely free for selected students as part of our mission to democratize AI literacy.
+                    </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What technology will my child use?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Students use modern web frameworks, AI prompting interfaces, and professional code editors similar to what developers at big tech companies use.
+                    </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        How are students selected?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Selection is based on the applicant's curiosity, passion for learning, and a short assessment of their problem-solving potential.
+                    </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What is the time commitment?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        The program involves two 1-hour live sessions per week, plus about 2 hours of self-paced building time.
+                    </div>
+</details>
+<!-- FAQ 5 -->
+<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        Do parents need to attend the classes?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        No, classes are designed for the student and developer only. However, parents are invited to the final Showcase session at the end of week 4.
+                    </div>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-start gap-8 px-gutter py-section-v-md max-w-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-display-lg text-primary tracking-tight">AuraMinds</span>
+<p class="max-w-xs text-on-surface-variant font-body-md">Building the next generation of AI innovators and digital magicians.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md font-bold text-primary">Explore</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">How It Works</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md font-bold text-primary">Company</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md font-bold text-primary">Social</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">WhatsApp</a>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center md:text-left">
+<p class="text-on-surface-variant font-label-md text-label-md">© 2026 AuraMinds. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth header transition on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+</body></html>
