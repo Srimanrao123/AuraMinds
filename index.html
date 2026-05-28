@@ -892,15 +892,35 @@
                 <!-- 3. Parent's WhatsApp Number -->
                 <div class="flex flex-col gap-1.5">
                     <label for="parent-whatsapp"
-                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp Number
-                        (with Country Code)</label>
-                    <div class="relative">
-                        <span
-                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
-                        <input type="tel" id="parent-whatsapp" name="whatsapp" required
-                            placeholder="e.g. +1 555 123 4567 (include country code)"
-                            class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
+                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp Number</label>
+                    <div class="flex gap-2">
+                        <!-- Country Code Dropdown -->
+                        <div class="relative w-[110px] flex-shrink-0">
+                            <span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[18px]">public</span>
+                            <select id="country-code" name="countryCode" required class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3.5 pl-8 pr-6 text-xs focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer font-semibold">
+                                <option value="+1" selected>🇺🇸 +1</option>
+                                <option value="+91">🇮🇳 +91</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <option value="+61">🇦🇺 +61</option>
+                                <option value="+971">🇦🇪 +971</option>
+                                <option value="+65">🇸🇬 +65</option>
+                                <option value="+1">🇨🇦 +1</option>
+                                <option value="+60">🇲🇾 +60</option>
+                                <option value="+353">🇮🇪 +353</option>
+                                <option value="+64">🇳🇿 +64</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none text-[18px]">expand_more</span>
+                        </div>
+                        
+                        <!-- Number Input -->
+                        <div class="relative flex-grow">
+                            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
+                            <input type="tel" id="parent-whatsapp" name="whatsapp" required
+                                placeholder="e.g. 555 123 4567"
+                                class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
+                        </div>
                     </div>
+                    <p id="whatsapp-error" class="text-red-500 text-[11px] mt-1 hidden">Please enter a valid phone number (7 to 15 digits).</p>
                 </div>
 
                 <!-- 4. Best Time Dropdown -->
@@ -1137,8 +1157,29 @@
 
             const childName = document.getElementById('child-name').value.trim();
             const grade = document.getElementById('student-grade').value;
-            const whatsapp = document.getElementById('parent-whatsapp').value.trim();
+            const countryCode = document.getElementById('country-code').value;
+            const phoneNumber = document.getElementById('parent-whatsapp').value.trim();
             const bestTime = document.getElementById('best-time').value;
+
+            // Mobile number validation
+            const digitsOnly = phoneNumber.replace(/\D/g, '');
+            const isValidChar = /^[0-9\s\-\(\)\+]+$/.test(phoneNumber);
+            const errorEl = document.getElementById('whatsapp-error');
+            const inputEl = document.getElementById('parent-whatsapp');
+
+            if (!isValidChar || digitsOnly.length < 7 || digitsOnly.length > 15) {
+                // Show error
+                errorEl.classList.remove('hidden');
+                inputEl.classList.add('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+                inputEl.focus();
+                return; // Stop form submission
+            } else {
+                // Clear error if valid
+                errorEl.classList.add('hidden');
+                inputEl.classList.remove('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+            }
+
+            const whatsapp = `'${countryCode} ${phoneNumber}`;
 
             // UI Loading State
             submitBtn.disabled = true;

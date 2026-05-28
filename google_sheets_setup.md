@@ -44,6 +44,10 @@ function doPost(e) {
     var name = params.childName || "";
     var grade = params.grade || "";
     var whatsapp = params.whatsapp || "";
+    // Prepend single quote if it starts with '+' to force plain text formatting in Google Sheets
+    if (whatsapp.indexOf("+") === 0) {
+      whatsapp = "'" + whatsapp;
+    }
     var bestTime = params.bestTime || "";
     var timestamp = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }); // Format timestamp
     
