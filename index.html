@@ -129,8 +129,20 @@
     </style>
 </head>
 <body class="bg-background">
+<!-- Countdown Banner -->
+<div id="countdown-banner" class="fixed top-0 left-0 w-full h-10 bg-gradient-to-r from-primary to-secondary text-white text-xs md:text-sm font-semibold z-50 flex items-center justify-center gap-3 px-4 shadow-sm select-none">
+    <span class="flex items-center gap-1.5">
+        <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+        </span>
+        <span>Registrations close this Wednesday!</span>
+    </span>
+    <span id="countdown-timer" class="bg-white/20 px-2.5 py-1 rounded font-mono text-amber-300 font-bold tracking-wider text-[11px] md:text-xs">00d 00h 00m 00s</span>
+</div>
+
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<header class="fixed top-10 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
 <nav class="flex justify-between items-center px-gutter py-4 max-w-max-width mx-auto">
 <div class="flex items-center gap-2.5">
 <img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
@@ -147,7 +159,7 @@
 <a class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 hover:shadow-md transition-all duration-300 active:scale-95 inline-block" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply for Free</a>
 </nav>
 </header>
-<main class="pt-20">
+<main class="pt-[120px]">
 <!-- HERO SECTION -->
 <section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-section-v-md">
 <!-- Decorative mesh gradient -->
@@ -625,6 +637,27 @@
 <p class="text-on-surface-variant font-label-md text-label-md">© 2026 AuraMinds. All rights reserved.</p>
 </div>
 </footer>
+
+<!-- Apply Now Popup -->
+<div id="apply-popup" class="fixed bottom-6 right-6 z-50 max-w-sm w-[calc(100%-3rem)] bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-primary/20 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-500 ease-out flex flex-col gap-4">
+    <button id="close-popup" class="absolute top-3 right-3 text-on-surface-variant/60 hover:text-on-surface transition-colors" aria-label="Close popup">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <div class="flex items-start gap-4">
+        <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+            <span class="material-symbols-outlined text-[24px]">school</span>
+        </div>
+        <div>
+            <h4 class="font-bold text-on-background text-[16px] leading-tight">Secure Your Child's Space</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Registrations close this Wednesday. The 4-week pilot cohort is completely free for selected students!</p>
+        </div>
+    </div>
+    <div class="flex gap-3 justify-end items-center">
+        <button id="dismiss-popup-btn" class="px-4 py-2 text-xs font-semibold text-on-surface-variant hover:text-on-surface transition-colors">Maybe Later</button>
+        <a id="apply-popup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank" class="bg-primary text-white px-5 py-2 rounded-full text-xs font-bold hover:scale-105 hover:shadow-md active:scale-95 transition-all inline-block text-center">Apply Now</a>
+    </div>
+</div>
+
 <script>
         // Scroll Reveal Animation
         const observerOptions = {
@@ -650,7 +683,97 @@
                 header.classList.remove('shadow-md');
             }
         });
+
+        // ==========================================
+        // COUNTDOWN TIMER LOGIC
+        // ==========================================
+        function getNextWednesdayDeadline() {
+            const now = new Date();
+            const targetDay = 3; // Wednesday
+            const currentDay = now.getDay();
+            
+            let daysUntilTarget = targetDay - currentDay;
+            if (daysUntilTarget <= 0) {
+                daysUntilTarget += 7;
+            }
+            
+            const targetDate = new Date(now);
+            targetDate.setDate(now.getDate() + daysUntilTarget);
+            targetDate.setHours(23, 59, 59, 999); // Midnight at end of Wednesday
+            return targetDate;
+        }
+
+        const deadline = getNextWednesdayDeadline();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = deadline - now;
+            
+            if (difference <= 0) {
+                document.getElementById('countdown-timer').innerHTML = "EXPIRED";
+                return;
+            }
+            
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            const dStr = String(days).padStart(2, '0');
+            const hStr = String(hours).padStart(2, '0');
+            const mStr = String(minutes).padStart(2, '0');
+            const sStr = String(seconds).padStart(2, '0');
+            
+            document.getElementById('countdown-timer').innerHTML = `${dStr}d ${hStr}h ${mStr}m ${sStr}s`;
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // ==========================================
+        // APPLY NOW POPUP LOGIC
+        // ==========================================
+        const popup = document.getElementById('apply-popup');
+        const closePopupBtn = document.getElementById('close-popup');
+        const dismissPopupBtn = document.getElementById('dismiss-popup-btn');
+        const applyPopupLink = document.getElementById('apply-popup-link');
+        
+        let popupTimer = null;
+        
+        function showPopup() {
+            if (localStorage.getItem('auraMindsApplied') === 'true') {
+                return;
+            }
+            popup.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            popup.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        }
+        
+        function hidePopup() {
+            popup.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            popup.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            scheduleNextPopup();
+        }
+        
+        function scheduleNextPopup() {
+            if (localStorage.getItem('auraMindsApplied') === 'true') {
+                return;
+            }
+            if (popupTimer) clearTimeout(popupTimer);
+            popupTimer = setTimeout(showPopup, 20000); // Trigger every 20 seconds
+        }
+        
+        if (closePopupBtn) closePopupBtn.addEventListener('click', hidePopup);
+        if (dismissPopupBtn) dismissPopupBtn.addEventListener('click', hidePopup);
+        
+        if (applyPopupLink) {
+            applyPopupLink.addEventListener('click', () => {
+                localStorage.setItem('auraMindsApplied', 'true');
+                popup.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+                popup.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+                if (popupTimer) clearTimeout(popupTimer);
+            });
+        }
+        
+        scheduleNextPopup();
     </script>
-
-
 </body></html>
