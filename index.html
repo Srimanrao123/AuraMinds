@@ -123,6 +123,10 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
+        .fill-1 {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -173,12 +177,12 @@
                     href="javascript:void(0)">Apply Now</a>
             </div>
             <a class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 hover:shadow-md transition-all duration-300 active:scale-95 inline-block apply-trigger"
-                href="javascript:void(0)">Apply for Free</a>
+                href="javascript:void(0)">Apply Now</a>
         </nav>
     </header>
     <main class="pt-[120px]">
         <!-- HERO SECTION -->
-        <section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-section-v-md">
+        <section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-10 md:py-20">
             <!-- Decorative mesh gradient -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/10 -z-10"></div>
             <div class="max-w-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -196,7 +200,7 @@
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
                         <a class="bg-[#FBBF24] text-[#1d182d] px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:scale-105 hover:shadow-lg transition-all duration-300 inline-block apply-trigger"
-                            href="javascript:void(0)">Apply Now, It's Free</a>
+                            href="javascript:void(0)">Book Free Trial Class</a>
                         <button
                             class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:bg-primary/5 transition-all duration-300"
                             onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})">
@@ -233,14 +237,61 @@
                         <span class="font-headline-md text-body-md font-bold">Build Confidence</span>
                     </div>
                     <div class="flex items-center justify-center gap-3">
-                        <span class="material-symbols-outlined text-primary text-[24px]">present_to_all</span>
-                        <span class="font-headline-md text-body-md font-bold">Present Live to Parents</span>
+                        <span class="material-symbols-outlined text-primary text-[24px]">emoji_objects</span>
+                        <span class="font-headline-md text-body-md font-bold">Solve Real-World Problems</span>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- QUICK PROGRAM DETAILS GRID -->
+        <section class="bg-white py-10 border-b border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">diversity_3</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Class
+                            Format</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">1-on-1 Live Mentorship</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">child_care</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Age
+                            Group</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">Grades 5 to 12</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">calendar_today</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">
+                            Duration</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">4 Weeks</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">schedule</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Time
+                            Commitment</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">4 Hrs/Wk (Flexible)</p>
+                    </div>
+                    <div class="p-4 flex flex-col items-center gap-2 col-span-2 md:col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">payments</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">
+                            Program Fee</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">First Session Free</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ABOUT THE PROGRAM -->
-        <section class="py-section-v-lg px-gutter max-w-max-width mx-auto" id="program">
+        <section class="py-12 md:py-24 px-gutter max-w-max-width mx-auto" id="program">
             <div class="text-center mb-16">
                 <span
                     class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">THE
@@ -280,8 +331,155 @@
                 </div>
             </div>
         </section>
+        <!-- STUDENT PROJECTS SHOWCASE -->
+        <section class="bg-surface-container-low py-12 md:py-24 border-y border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <span
+                        class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">Student
+                        Portfolio</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">What Your Child Will Actually
+                        Build</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        We ditch boring worksheets. Students learn computer science by designing, coding, and deploying
+                        real AI tools that they can proudly show off.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    <!-- Project 1: Hospital Assistant -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Hospital Management Assistant Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="./hospital_dashboard.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    1: Healthcare</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Hospital Assistant</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    An AI dashboard that manages patient queues, allocates beds, schedules doctors, and
+                                    summarizes reports.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Bed
+                                    Allocation</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Doctor
+                                    Scheduling</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Report
+                                    Summarization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Customer Support Agent -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Customer Support Agent Widget"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="./customer_agent.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    2: Automation</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Customer Agent</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A support agent that automatically answers queries, generates price quotes, and
+                                    books meetings.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Answers
+                                    Queries</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Generates
+                                    Quotes</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Books
+                                    Meetings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Real Estate Agent -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Real Estate Sales Agent Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="./real_estate_agent.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    3: Conversational AI</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Real Estate Agent</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A chatbot that interacts with prospective property buyers, schedules visits, and
+                                    calculates EMI.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Recommends
+                                    Properties</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Calculates
+                                    EMI</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Qualifies
+                                    Leads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Personal Finance Advisor -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Personal Finance Advisor Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="./finance_advisor.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    4: FinTech</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Finance Advisor</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A finance manager that processes bank statement uploads to plan budgets and suggest
+                                    investments.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Expense
+                                    Analysis</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Budget
+                                    Planning</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Savings
+                                    Advice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- HOW IT WORKS -->
-        <section class="bg-surface-container py-section-v-lg" id="how-it-works">
+        <section class="bg-surface-container py-12 md:py-24" id="how-it-works">
             <div class="max-w-max-width mx-auto px-gutter">
                 <div class="text-center mb-16">
                     <h2 class="font-headline-lg text-headline-lg text-on-background">How It Works</h2>
@@ -330,8 +528,128 @@
                 </div>
             </div>
         </section>
+        <!-- PARENT TESTIMONIALS (EMOTIONAL REASSURANCE & TRUST) -->
+        <section
+            class="bg-gradient-to-tr from-primary-container/5 via-white to-secondary-container/5 py-12 md:py-24 border-y border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <span
+                        class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">Parent
+                        Stories</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Loved by Parents, Inspired by
+                        Builders</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        Hear how our 1-on-1 developer mentors have helped students build analytical confidence, shift
+                        from passive consumers to creative engineers, and find a safe space to grow.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "My daughter Sarah was obsessed with scrolling on social media. After just 4 weeks with
+                                Arjun, she's now building her own AI Study bot! Shifting her from a passive consumer to
+                                an active creator has done wonders for her confidence and school grades."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Melissa K.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Mother of Sarah (Grade 8) — NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "As a non-tech parent, I was worried coding would be too dry or intimidating for Rohan.
+                                Priya was so patient. She turned complex algorithms into a fun game. Rohan looked
+                                forward to every session—it's the first time he's been excited about learning math and
+                                logic!"
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Dr. Rajesh N.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Father of Rohan (Grade 6) — CA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between col-span-2 md:col-span-1 max-w-[calc(50%-12px)] md:max-w-none mx-auto w-full">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "What I love most is the focus on emotional safety. When my son Tyler's code failed, his
+                                mentor Rahul didn't just give the answer—he taught Tyler how to troubleshoot and embrace
+                                mistakes as part of the learning cycle. Tyler's resilience has grown immensely."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Amanda L.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Mother of Tyler (Grade 10) —
+                                    London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- MEET YOUR MENTORS -->
-        <section class="py-section-v-lg px-gutter">
+        <section class="py-12 md:py-24 px-gutter">
             <div class="max-w-max-width mx-auto">
                 <div class="text-center mb-16">
                     <span class="font-label-md text-label-md text-primary font-bold tracking-widest uppercase">YOUR
@@ -428,7 +746,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#EDE9FE] py-16">
+        <section class="bg-[#EDE9FE] py-10 md:py-16">
             <div class="max-w-max-width mx-auto px-gutter">
                 <h2 class="font-headline-md text-headline-md text-center mb-12 text-on-background">Why Our Mentors Are
                     Different</h2>
@@ -469,7 +787,7 @@
             </div>
         </section>
         <!-- WHAT YOU'LL LEARN SECTION -->
-        <section class="py-section-v-lg bg-gradient-to-br from-[#FAF5FF] to-[#FDF2F8]">
+        <section class="py-12 md:py-24 bg-gradient-to-br from-[#FAF5FF] to-[#FDF2F8]">
             <div class="max-w-max-width mx-auto px-gutter">
                 <div class="text-center mb-16">
                     <span class="font-label-md text-label-md text-[#5B21B6] uppercase tracking-widest font-bold">THE
@@ -611,7 +929,7 @@
             </div>
         </section>
         <!-- WHO IS THIS FOR -->
-        <section class="py-section-v-lg max-w-max-width mx-auto px-gutter overflow-hidden" id="program">
+        <section class="py-12 md:py-24 max-w-max-width mx-auto px-gutter overflow-hidden" id="program">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="reveal active">
                     <h2 class="font-headline-lg text-headline-lg mb-8">Built for Curious, Ambitious Students</h2>
@@ -670,7 +988,7 @@
             </div>
         </section>
         <!-- URGENCY BANNER -->
-        <section class="bg-[#0F0A1E] py-16 px-gutter">
+        <section class="bg-[#0F0A1E] py-10 md:py-16 px-gutter">
             <div
                 class="max-w-max-width mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                 <div>
@@ -680,68 +998,131 @@
                 </div>
                 <a class="bg-[#FBBF24] text-[#0F0A1E] px-10 py-5 rounded-full font-display-lg text-body-lg font-bold hover:scale-105 transition-transform flex items-center gap-2 justify-center apply-trigger"
                     href="javascript:void(0)">
-                    Apply for Free
+                    Book Free Trial
                     <span class="material-symbols-outlined font-bold">arrow_forward</span>
                 </a>
             </div>
         </section>
         <!-- FAQ -->
-        <section class="py-section-v-lg px-gutter max-w-3xl mx-auto">
+        <section class="py-12 md:py-24 px-gutter max-w-3xl mx-auto">
             <h2 class="font-headline-lg text-headline-lg text-center mb-12">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 <!-- FAQ 1 -->
                 <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden" open="">
                     <summary
                         class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        Is this really free?
+                        How does the free first session work? Is there any catch?
                         <span
                             class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
                     </summary>
                     <div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Yes! The first session is free for everyone, and the full 4-week program is completely free for
-                        selected students as part of our mission to democratize AI literacy.
+                        The first 1-on-1 live session is 100% free with absolutely no credit card required or hidden
+                        commitment. It serves as a full 60-minute trial class where your child will build their very
+                        first mini-AI script with our developer mentor. If they love the experience and you choose to
+                        continue with the full program, we will share transparent enrollment and pricing plans at the
+                        end of that first session.
                     </div>
                 </details>
                 <!-- FAQ 2 -->
                 <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
                     <summary
                         class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        What technology will my child use?
+                        What if my child has absolutely zero coding experience?
                         <span
                             class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
                     </summary>
                     <div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Students use modern web frameworks, AI prompting interfaces, and professional code editors
-                        similar to what developers at big tech companies use.
+                        That is completely fine! Over 80% of our students start with zero prior coding or computer
+                        science knowledge. Since classes are strictly 1-on-1, our developer mentors adapt the pace
+                        entirely to your child's comfort level, ensuring they feel supported and never overwhelmed.
                     </div>
                 </details>
                 <!-- FAQ 3 -->
                 <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
                     <summary
                         class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        How are students selected?
+                        How are the class timings scheduled?
                         <span
                             class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
                     </summary>
                     <div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Selection is based on the applicant's curiosity, passion for learning, and a short assessment of
-                        their problem-solving potential.
+                        We offer completely flexible timings. Once selected, you and your assigned mentor will align on
+                        weekly slots that fit perfectly around your child's school, homework, and extracurricular
+                        schedules. If a session needs to be rescheduled, you can do so easily with 24 hours notice.
                     </div>
                 </details>
                 <!-- FAQ 4 -->
                 <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
                     <summary
                         class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        What is the time commitment?
+                        Is the online class environment safe for my child?
                         <span
                             class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
                     </summary>
                     <div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        The program involves four 1-hour live sessions per week, plus about 2 hours of self-paced
-                        building time.
+                        Absolutely. Safety is our number one priority. Every single mentor is a professional software
+                        developer who has undergone rigorous technical screening, criminal background checks, and
+                        reference audits. All classes are conducted over secure, private video rooms, and sessions are
+                        recorded for safety auditing and quality reviews.
                     </div>
                 </details>
                 <!-- FAQ 5 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What is the live class format?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Classes are 1-on-1, live, and highly interactive. Rather than watching passive slide
+                        presentations, students share their screens and pair-program alongside an active software
+                        developer. It feels like a collaborative workshop where the student spends 80% of the time
+                        writing code and building.
+                    </div>
+                </details>
+                <!-- FAQ 6 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What technology and tools will my child use?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Students work with modern web frameworks, actual code editors (like VS Code), AI API
+                        playgrounds, and low-code flow builders. We teach them the exact tools that professional
+                        engineers at tech companies use, rather than toy coding blocks.
+                    </div>
+                </details>
+                <!-- FAQ 7 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        How are students selected for the cohort?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Selection is based on a short online assessment that checks the student's problem-solving
+                        potential, curiosity, and eagerness to build. We look for ambition and a passion for learning
+                        rather than previous academic grades or technical history.
+                    </div>
+                </details>
+                <!-- FAQ 8 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What is the weekly time commitment?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        The program involves four 1-hour live sessions per week, plus approximately 2 hours of
+                        self-paced building and experimentation outside of class.
+                    </div>
+                </details>
+                <!-- FAQ 9 -->
                 <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
                     <summary
                         class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
@@ -750,8 +1131,9 @@
                             class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
                     </summary>
                     <div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        No, classes are designed for the student and developer only. However, parents are invited to the
-                        final Showcase session at the end of week 4.
+                        No, classes are designed strictly for the student and the mentor. However, we invite parents to
+                        join the final Showcase session at the end of week 4, where your child will present their
+                        working AI projects live!
                     </div>
                 </details>
             </div>
@@ -760,7 +1142,7 @@
     <!-- Footer -->
     <footer class="w-full rounded-t-xl bg-surface-container-lowest border-t border-outline-variant">
         <div
-            class="flex flex-col md:flex-row justify-between items-start gap-8 px-gutter py-section-v-md max-w-max-width mx-auto">
+            class="flex flex-col md:flex-row justify-between items-start gap-8 px-gutter py-10 md:py-20 max-w-max-width mx-auto">
             <div class="flex flex-col gap-4">
                 <div class="flex items-center gap-2.5">
                     <img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
@@ -775,18 +1157,18 @@
                 <div class="flex flex-col gap-4">
                     <span class="font-label-md text-label-md font-bold text-primary">Explore</span>
                     <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
-                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">How
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">How
                         It Works</a>
                 </div>
                 <div class="flex flex-col gap-4">
                     <span class="font-label-md text-label-md font-bold text-primary">Company</span>
                     <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
-                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">Contact</a>
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">Contact</a>
                 </div>
                 <div class="flex flex-col gap-4">
                     <span class="font-label-md text-label-md font-bold text-primary">Social</span>
                     <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
-                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">WhatsApp</a>
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -810,8 +1192,8 @@
             </div>
             <div>
                 <h4 class="font-bold text-on-background text-[16px] leading-tight">Secure Your Child's Space</h4>
-                <p class="text-xs text-on-surface-variant mt-1">Registrations close this Wednesday. The 4-week pilot
-                    cohort is completely free for selected students!</p>
+                <p class="text-xs text-on-surface-variant mt-1">Registrations close this Wednesday. The first 1-on-1
+                    session is completely free!</p>
             </div>
         </div>
         <div class="flex gap-3 justify-end items-center">
@@ -843,7 +1225,7 @@
                 </button>
                 <span
                     class="bg-amber-400 text-primary font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full inline-block mb-3 select-none">
-                    🌟 Free 1-on-1 Pilot Cohort
+                    🌟 First Session Free
                 </span>
                 <h3 class="font-display-lg-mobile font-bold text-2xl md:text-3xl leading-tight">Start Your Child's AI
                     Journey</h3>
@@ -892,12 +1274,15 @@
                 <!-- 3. Parent's WhatsApp Number -->
                 <div class="flex flex-col gap-1.5">
                     <label for="parent-whatsapp"
-                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp Number</label>
+                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp
+                        Number</label>
                     <div class="flex gap-2">
                         <!-- Country Code Dropdown -->
                         <div class="relative w-[110px] flex-shrink-0">
-                            <span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[18px]">public</span>
-                            <select id="country-code" name="countryCode" required class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3.5 pl-8 pr-6 text-xs focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer font-semibold">
+                            <span
+                                class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[18px]">public</span>
+                            <select id="country-code" name="countryCode" required
+                                class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3.5 pl-8 pr-6 text-xs focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer font-semibold">
                                 <option value="+1" selected>🇺🇸 +1</option>
                                 <option value="+91">🇮🇳 +91</option>
                                 <option value="+44">🇬🇧 +44</option>
@@ -909,18 +1294,21 @@
                                 <option value="+353">🇮🇪 +353</option>
                                 <option value="+64">🇳🇿 +64</option>
                             </select>
-                            <span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none text-[18px]">expand_more</span>
+                            <span
+                                class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none text-[18px]">expand_more</span>
                         </div>
-                        
+
                         <!-- Number Input -->
                         <div class="relative flex-grow">
-                            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
                             <input type="tel" id="parent-whatsapp" name="whatsapp" required
                                 placeholder="e.g. 555 123 4567"
                                 class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
                         </div>
                     </div>
-                    <p id="whatsapp-error" class="text-red-500 text-[11px] mt-1 hidden">Please enter a valid phone number (7 to 15 digits).</p>
+                    <p id="whatsapp-error" class="text-red-500 text-[11px] mt-1 hidden">Please enter a valid phone
+                        number (7 to 15 digits).</p>
                 </div>
 
                 <!-- 4. Best Time Dropdown -->
@@ -1069,9 +1457,6 @@
         let popupTimer = null;
 
         function showPopup() {
-            if (localStorage.getItem('auraMindsApplied') === 'true') {
-                return;
-            }
             popup.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
             popup.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
         }
@@ -1083,11 +1468,8 @@
         }
 
         function scheduleNextPopup() {
-            if (localStorage.getItem('auraMindsApplied') === 'true') {
-                return;
-            }
             if (popupTimer) clearTimeout(popupTimer);
-            popupTimer = setTimeout(showPopup, 20000); // Trigger every 20 seconds
+            popupTimer = setTimeout(showPopup, 60000); // Trigger every 60 seconds
         }
 
         if (closePopupBtn) closePopupBtn.addEventListener('click', hidePopup);
@@ -1192,16 +1574,14 @@
                 bestTime
             };
 
-            // Suppress pop-up forever after booking
-            localStorage.setItem('auraMindsApplied', 'true');
-
-            // Hide periodic pop-up instantly if active
+            // Close the popup if it happens to be open when submitting
             const popupEl = document.getElementById('apply-popup');
             if (popupEl) {
                 popupEl.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
                 popupEl.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
             }
-            if (popupTimer) clearTimeout(popupTimer);
+            // Keep the popup active for future views
+            scheduleNextPopup();
 
             // Submission handler
             function showSuccessScreen() {

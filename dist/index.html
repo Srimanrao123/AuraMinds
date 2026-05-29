@@ -1,12 +1,19 @@
-<!DOCTYPE html><html class="light" lang="en" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title class="">AuraMinds | Prepare Your Child for the AI Future</title>
-<link rel="icon" type="image/png" href="/logo-icon.png">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
+<!DOCTYPE html>
+<html class="light" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title class="">AuraMinds | Prepare Your Child for the AI Future</title>
+    <link rel="icon" type="image/png" href="/logo-icon.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -81,20 +88,20 @@
                         "display-lg": ["Sora"]
                     },
                     "fontSize": {
-                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
-                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
                     }
                 },
             },
         }
     </script>
-<style>
+    <style>
         body {
             background-color: #fdf7ff;
             color: #1d182d;
@@ -104,7 +111,7 @@
 
         .grid-pattern {
             background-image: linear-gradient(to right, rgba(91, 33, 182, 0.05) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(91, 33, 182, 0.05) 1px, transparent 1px);
+                linear-gradient(to bottom, rgba(91, 33, 182, 0.05) 1px, transparent 1px);
             background-size: 40px 40px;
         }
 
@@ -114,6 +121,10 @@
 
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .fill-1 {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
         .reveal {
@@ -128,504 +139,1242 @@
         }
     </style>
 </head>
+
 <body class="bg-background">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
-<nav class="flex justify-between items-center px-gutter py-4 max-w-max-width mx-auto">
-<div class="flex items-center gap-2.5">
-<img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
-<span class="text-headline-md font-display-lg tracking-tight font-bold">
-<span class="text-primary">Aura</span><span class="text-on-background">Minds</span>
-</span>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-primary font-bold border-b-2 border-tertiary-container font-label-md text-label-md" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#program">Program</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#how-it-works">How It Works</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply Now</a>
-</div>
-<a class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 hover:shadow-md transition-all duration-300 active:scale-95 inline-block" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply for Free</a>
-</nav>
-</header>
-<main class="pt-20">
-<!-- HERO SECTION -->
-<section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-section-v-md">
-<!-- Decorative mesh gradient -->
-<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/10 -z-10"></div>
-<div class="max-w-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="flex flex-col items-start gap-8">
-<div class="bg-secondary-fixed px-4 py-1.5 rounded-full flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
-<span class="font-label-md text-label-md text-primary">Only 5 Slots Available This Batch</span>
-</div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
+    <!-- Countdown Banner -->
+    <div id="countdown-banner"
+        class="fixed top-0 left-0 w-full h-10 bg-gradient-to-r from-primary to-secondary text-white text-xs md:text-sm font-semibold z-50 flex items-center justify-center gap-3 px-4 shadow-sm select-none">
+        <span class="flex items-center gap-1.5">
+            <span class="flex h-2 w-2 relative">
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <span>Registrations close this Wednesday!</span>
+        </span>
+        <span id="countdown-timer"
+            class="bg-white/20 px-2.5 py-1 rounded font-mono text-amber-300 font-bold tracking-wider text-[11px] md:text-xs">00d
+            00h 00m 00s</span>
+    </div>
+
+    <!-- TopNavBar -->
+    <header class="fixed top-10 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+        <nav class="flex justify-between items-center px-gutter py-4 max-w-max-width mx-auto">
+            <div class="flex items-center gap-2.5">
+                <img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
+                <span class="text-headline-md font-display-lg tracking-tight font-bold">
+                    <span class="text-primary">Aura</span><span class="text-on-background">Minds</span>
+                </span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-primary font-bold border-b-2 border-tertiary-container font-label-md text-label-md"
+                    href="#">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+                    href="#program">Program</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+                    href="#how-it-works">How It Works</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md apply-trigger"
+                    href="javascript:void(0)">Apply Now</a>
+            </div>
+            <a class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 hover:shadow-md transition-all duration-300 active:scale-95 inline-block apply-trigger"
+                href="javascript:void(0)">Apply Now</a>
+        </nav>
+    </header>
+    <main class="pt-[120px]">
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[90vh] flex items-center overflow-hidden grid-pattern py-10 md:py-20">
+            <!-- Decorative mesh gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/10 -z-10"></div>
+            <div class="max-w-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col items-start gap-8">
+                    <div class="bg-secondary-fixed px-4 py-1.5 rounded-full flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+                        <span class="font-label-md text-label-md text-primary">Only 5 Slots Available This Batch</span>
+                    </div>
+                    <h1
+                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
                         Prepare Your Child for the <span class="text-primary">AI Future</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">1-on-1 live classes with real developers. For Grade 5–12 students. Master the tools that are changing the world.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">1-on-1 live classes with real
+                        developers. For Grade 5–12 students. Master the tools that are changing the world.
                     </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<a class="bg-[#FBBF24] text-[#1d182d] px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:scale-105 hover:shadow-lg transition-all duration-300 inline-block" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">Apply Now — It's Free</a>
-<button class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:bg-primary/5 transition-all duration-300">
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a class="bg-[#FBBF24] text-[#1d182d] px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:scale-105 hover:shadow-lg transition-all duration-300 inline-block apply-trigger"
+                            href="javascript:void(0)">Book Free Trial Class</a>
+                        <button
+                            class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:bg-primary/5 transition-all duration-300"
+                            onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})">
                             See How It Works
                         </button>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full group-hover:bg-primary/20 transition-all duration-500"></div>
-<img alt="Student using laptop with floating AI elements" class="relative rounded-2xl w-full object-cover soft-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiQ6LwYnTCPzHXaR_xc8v8cEA8pW6US_Hs8QetAfDtCfEo7ntRdlqRC-w5xaxuhWENTGbVFodpllkUY9RTD6kmo0iI-siUq1NI9ebaeMCwmYNYp9W8PKxqLBVY9loUmuByx9rnTrRgwqyrwgzYu7ckHt4D8Rv6bS7Vj1ndHXpcPoZcbzsJG7vEAQahw981TsjqY4BeJDCds8UwmwGkzbOvph8hN5lLXoqWlQKm2LYju-0F9mfUitly7wsohhhnCBYji-hrB-mK99w">
-</div>
-</div>
-</section>
-<!-- TRUST BAR -->
-<section class="bg-surface-container-low py-12 border-y border-outline-variant">
-<div class="max-w-max-width mx-auto px-gutter text-center">
-<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-8">What students learn in just 4 weeks:</p>
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="flex items-center justify-center gap-3">
-<span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
-<span class="font-headline-md text-body-md font-bold">Build Real AI Projects</span>
-</div>
-<div class="flex items-center justify-center gap-3">
-<span class="material-symbols-outlined text-primary text-[24px]">speed</span>
-<span class="font-headline-md text-body-md font-bold">Improve Productivity</span>
-</div>
-<div class="flex items-center justify-center gap-3">
-<span class="material-symbols-outlined text-primary text-[24px]">psychology</span>
-<span class="font-headline-md text-body-md font-bold">Build Confidence</span>
-</div>
-<div class="flex items-center justify-center gap-3">
-<span class="material-symbols-outlined text-primary text-[24px]">present_to_all</span>
-<span class="font-headline-md text-body-md font-bold">Present Live to Parents</span>
-</div>
-</div>
-</div>
-</section>
-<!-- ABOUT THE PROGRAM -->
-<section class="py-section-v-lg px-gutter max-w-max-width mx-auto" id="program">
-<div class="text-center mb-16">
-<span class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">THE PROGRAM</span>
-<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Not Just Another Coding Class</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-[32px]">video_chat</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4">Live 1-on-1 Classes</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Personalized attention from professional developers who guide your child through every complex concept.</p>
-</div>
-<!-- Card 2 -->
-<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active" style="transition-delay: 100ms;">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-[32px]">handyman</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4">Hands-On Learning</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">We move past theory quickly. Students spend 80% of their time actually building and coding.</p>
-</div>
-<!-- Card 3 -->
-<div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active" style="transition-delay: 200ms;">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-[32px]">rocket</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4">Real Projects</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">From chatbots to personal assistants, your child creates portfolio-ready projects they can show off.</p>
-</div>
-</div>
-</section>
-<!-- HOW IT WORKS -->
-<section class="bg-surface-container py-section-v-lg" id="how-it-works">
-<div class="max-w-max-width mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-background">How It Works</h2>
-</div>
-<div class="relative flex flex-col md:flex-row justify-between gap-8 md:gap-4">
-<!-- Progress Line (Desktop) -->
-<div class="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-outline-variant -z-10"></div>
-<!-- Step 1 -->
-<div class="reveal flex-1 text-center group active">
-<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">1</div>
-<h4 class="font-headline-md text-[18px] mb-2">Apply Online</h4>
-<p class="font-body-md text-body-md text-on-surface-variant px-4">Tell us about your child's interest and goals.</p>
-</div>
-<!-- Step 2 -->
-<div class="reveal flex-1 text-center group active" style="transition-delay: 100ms;">
-<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">2</div>
-<h4 class="font-headline-md text-[18px] mb-2">Get Selected</h4>
-<p class="font-body-md text-body-md text-on-surface-variant px-4">Our developers review applications for the right fit.</p>
-</div>
-<!-- Step 3 -->
-<div class="reveal flex-1 text-center group active" style="transition-delay: 200ms;">
-<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">3</div>
-<h4 class="font-headline-md text-[18px] mb-2">Live 1-on-1 Sessions</h4>
-<p class="font-body-md text-body-md text-on-surface-variant px-4">Learn coding and AI from industry pros at your own pace.</p>
-</div>
-<!-- Step 4 -->
-<div class="reveal flex-1 text-center group active" style="transition-delay: 300ms;">
-<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">4</div>
-<h4 class="font-headline-md text-[18px] mb-2">Build &amp; Present</h4>
-<p class="font-body-md text-body-md text-on-surface-variant px-4">Showcase the AI project to family and friends.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- MEET YOUR MENTORS -->
-<section class="py-section-v-lg px-gutter">
-<div class="max-w-max-width mx-auto">
-<div class="text-center mb-16">
-<span class="font-label-md text-label-md text-primary font-bold tracking-widest uppercase">YOUR MENTORS</span>
-<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Taught by Developers Who Actually Build with AI</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
-                Not teachers. Not instructors. Real developers working on real products — who also love teaching kids.
-            </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Mentor 1 -->
-<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
-<div class="relative mb-6">
-<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
-<img alt="Arjun Mehta" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wVWlIWx2uZZH_ykS3SGLMWstxw7Pyy0mmKwfO3hd7HPLJ_4Qrj5aMAt-T9WHLQfjEqWWfx-ph-fV3akh89Dj52hF-hnvzZ6EkVWFGH3D3qcpt1tcCUa_3oasHbB0PPhohVQeNYUdJvQbUdcxtBcIbqQF-TqvmGGPCinHz9XTVTjb_UmBQy3coLRmK_FZcM2zduzpxOTag5TD1BaCg0XTOwxweyhgz3LeSB_EFT4dLU-5UG7zwOOfA4fPOwoLxXeLCUVttQ3Ojjo">
-</div>
-<h3 class="font-headline-md text-headline-md mb-1">Arjun Mehta</h3>
-<p class="font-label-md text-primary mb-4">Full Stack Developer — 5 years experience</p>
-<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
-<span class="">🔨</span> Currently building: AI-powered SaaS dashboard
+                    </div>
                 </div>
-<p class="font-body-md text-on-surface-variant mb-6">
-                    Arjun builds production apps used by thousands of users daily. He mentors because he wishes he had someone like this at age 15.
-                </p>
-<div class="flex flex-wrap justify-center gap-2">
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">React</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Node.js</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">OpenAI API</span>
-</div>
-</div>
-<!-- Mentor 2 -->
-<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
-<div class="relative mb-6">
-<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
-<img alt="Priya Nair" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPzKIIMV1uZqS1vyEbKb9eBSiI4J47Xi8xC0Wo7uiw-IqwJ3789xoCiYZQa4mrA9bD2bHIKGACWSXAolERO7rNL4m0Pf1NZYRYZsSPk90ZTi5Y8-fQJeKiHSIU3vZoxTzQNiKd-Cth5matvmuS2aA99XaZcJc95eLCczHdbfg1hCRkLt-1u3ORxcRfb6oyKj2wuJwRVP4YfL71gy9rK4PXP43FoaZKs8bATbmJrlYKj40H2igQzyB2zbVk44Y-6RBPdtGKA75d4g">
-</div>
-<h3 class="font-headline-md text-headline-md mb-1">Priya Nair</h3>
-<p class="font-label-md text-primary mb-4">Automation Engineer — 4 years experience</p>
-<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
-<span class="">🔨</span> Currently building: No-code AI workflow tools
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full group-hover:bg-primary/20 transition-all duration-500">
+                    </div>
+                    <img alt="Student using laptop with floating AI elements"
+                        class="relative rounded-2xl w-full object-cover soft-glow"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiQ6LwYnTCPzHXaR_xc8v8cEA8pW6US_Hs8QetAfDtCfEo7ntRdlqRC-w5xaxuhWENTGbVFodpllkUY9RTD6kmo0iI-siUq1NI9ebaeMCwmYNYp9W8PKxqLBVY9loUmuByx9rnTrRgwqyrwgzYu7ckHt4D8Rv6bS7Vj1ndHXpcPoZcbzsJG7vEAQahw981TsjqY4BeJDCds8UwmwGkzbOvph8hN5lLXoqWlQKm2LYju-0F9mfUitly7wsohhhnCBYji-hrB-mK99w">
                 </div>
-<p class="font-body-md text-on-surface-variant mb-6">
-                    Priya specializes in making AI practical and accessible. She turns complex concepts into things students can build in a weekend.
-                </p>
-<div class="flex flex-wrap justify-center gap-2">
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Zapier</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">LangChain</span>
-</div>
-</div>
-<!-- Mentor 3 -->
-<div class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
-<div class="relative mb-6">
-<div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
-<img alt="Rahul Sharma" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXfm85H_IpHTp3mIHYciWCO8DxS4xU4mqC-s0kJXoEVTiiq6P8uOkNYuSi5cpRJd_EiDVQ1g3QnnGcw9OFFI47syo9ZlUIQN0S_9YG4xt8bx3mqbGJV2rQLUcH3WtZ8mK4I9fFcA33lCZeFYDBu7PWsh_ZMlvzkC1EaJKEz9YflmMgmNdHjFqyqTeUV_5MHBOy3R1hB2UZpgH67uC2DFPbufFXbFmrrkCEhFRzcbCB9dwEgMydW1Dlap94xT8MVxNDWgvwKKD0II">
-</div>
-<h3 class="font-headline-md text-headline-md mb-1">Rahul Sharma</h3>
-<p class="font-label-md text-primary mb-4">AI/ML Developer — 6 years experience</p>
-<div class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
-<span class="">🔨</span> Currently building: Computer vision app for retail
+            </div>
+        </section>
+        <!-- TRUST BAR -->
+        <section class="bg-surface-container-low py-12 border-y border-outline-variant">
+            <div class="max-w-max-width mx-auto px-gutter text-center">
+                <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-8">What
+                    students learn in just 4 weeks:</p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+                        <span class="font-headline-md text-body-md font-bold">Build Real AI Projects</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[24px]">speed</span>
+                        <span class="font-headline-md text-body-md font-bold">Improve Productivity</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[24px]">psychology</span>
+                        <span class="font-headline-md text-body-md font-bold">Build Confidence</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[24px]">emoji_objects</span>
+                        <span class="font-headline-md text-body-md font-bold">Solve Real-World Problems</span>
+                    </div>
                 </div>
-<p class="font-body-md text-on-surface-variant mb-6">
-                    Rahul has shipped models to real clients across 3 countries. He believes the best way to learn AI is to build something that actually works.
-                </p>
-<div class="flex flex-wrap justify-center gap-2">
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">TensorFlow</span>
-<span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Prompt Engineering</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-[#EDE9FE] py-16">
-<div class="max-w-max-width mx-auto px-gutter">
-<h2 class="font-headline-md text-headline-md text-center mb-12 text-on-background">Why Our Mentors Are Different</h2>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-<div class="text-center">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-<span class="material-symbols-outlined text-white text-[24px]">bolt</span>
-</div>
-<h4 class="font-bold mb-2">Active in Industry</h4>
-<p class="text-body-md text-on-surface-variant px-2">They don't just know theory — they ship code weekly.</p>
-</div>
-<div class="text-center">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-<span class="material-symbols-outlined text-white text-[24px]">target</span>
-</div>
-<h4 class="font-bold mb-2">Project-First Teaching</h4>
-<p class="text-body-md text-on-surface-variant px-2">Every session is built around something you'll actually make.</p>
-</div>
-<div class="text-center">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-<span class="material-symbols-outlined text-white text-[24px]">handshake</span>
-</div>
-<h4 class="font-bold mb-2">1-on-1 Attention</h4>
-<p class="text-body-md text-on-surface-variant px-2">No class of 30. Just you and your mentor, focused entirely on your growth.</p>
-</div>
-<div class="text-center">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-<span class="material-symbols-outlined text-white text-[24px]">public</span>
-</div>
-<h4 class="font-bold mb-2">Real-World Context</h4>
-<p class="text-body-md text-on-surface-variant px-2">They bring real problems from real projects into every lesson.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- WHAT YOU'LL LEARN SECTION -->
-<section class="py-section-v-lg bg-gradient-to-br from-[#FAF5FF] to-[#FDF2F8]">
-<div class="max-w-max-width mx-auto px-gutter">
-<div class="text-center mb-16">
-<span class="font-label-md text-label-md text-[#5B21B6] uppercase tracking-widest font-bold">THE CURRICULUM</span>
-<h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">A Syllabus Built for the Real World</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
-                We cover the foundations — but we never stop at them. If something exciting drops in AI this week, we teach it this week.
-            </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Card 1 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden border-b-[3px] border-b-transparent active" style="border-image: linear-gradient(to right, #EF4444, #3B82F6) 1;">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">memory</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">Intro to AI</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">From machine learning to neural networks — understand how AI actually thinks.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 2 (FEATURED) -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden border-2 border-[#3B82F6] active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">work</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">AI for Business &amp; Productivity</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI tools to work smarter, automate tasks, and solve real problems.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 3 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">bar_chart</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">Data Analysis with AI</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Process large datasets quickly — turn raw numbers into useful insights.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 4 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">chat_bubble</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">Natural Language Processing</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The tech behind ChatGPT, voice assistants, and smart search — demystified.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 5 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">verified_user</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">AI Ethics &amp; Responsibility</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI wisely. Understand bias, privacy, and what it means to build responsibly.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 6 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">settings_suggest</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">Automation &amp; Workflows</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Build tools that work for you — automate boring tasks with no-code and low-code AI.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 7 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">video_library</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">Image &amp; Video AI</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">How AI sees the world — image recognition, video analysis, and real applications.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-<!-- Card 8 -->
-<div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
-<div class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-white text-[24px]">smart_toy</span>
-</div>
-<h4 class="font-headline-md text-[18px] mb-3">AI in Gaming &amp; Creativity</h4>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Generate art, music, and game logic using AI. Create things that didn't exist before.</p>
-<div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]"></div>
-</div>
-</div>
-<!-- LIVING SYLLABUS BANNER -->
-<div class="mt-12 bg-[#FFFBEB] rounded-[16px] border-l-4 border-[#FBBF24] p-8 flex flex-col md:flex-row items-center gap-6">
-<div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-[#1d182d] text-[24px] font-bold">bolt</span>
-</div>
-<div>
-<h4 class="font-headline-md text-[18px] font-bold text-on-background mb-1">This syllabus is alive.</h4>
-<p class="font-body-md text-on-surface-variant">AI moves fast — and so do we. We update projects and tools weekly to ensure you're learning what's relevant right now.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- WHO IS THIS FOR -->
-<section class="py-section-v-lg max-w-max-width mx-auto px-gutter overflow-hidden" id="program">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="reveal active">
-<h2 class="font-headline-lg text-headline-lg mb-8">Built for Curious, Ambitious Students</h2>
-<ul class="space-y-6">
-<li class="flex items-start gap-4">
-<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
-</div>
-<div>
-<h4 class="font-bold text-on-surface">Grade 5-12 Students</h4>
-<p class="text-on-surface-variant text-body-md">Optimized curriculum for middle and high school minds.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
-</div>
-<div>
-<h4 class="font-bold text-on-surface">No coding experience required</h4>
-<p class="text-on-surface-variant text-body-md">We start from the basics and scale up fast with AI tools.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
-</div>
-<div>
-<h4 class="font-bold text-on-surface">Students who want to build, not watch</h4>
-<p class="text-on-surface-variant text-body-md">Ditch the passive tutorials for active creation.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<div class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
-</div>
-<div>
-<h4 class="font-bold text-on-surface">Master AI Generation</h4>
-<p class="text-on-surface-variant text-body-md">Learn to prompt and build using the latest LLM technologies.</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="reveal relative flex justify-center active">
-<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
-<img alt="Profile of a student project card" class="relative max-w-md w-full soft-glow rounded-3xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwb4Hs3wM-i2GTuXUrcoCVoLSUSf5sZTVpvtw0WLDbqHujbxg-YCZzU_EVHapVx0OJDHx45td0j5_X5cR7ZioFpv-2LpKF-6YPtNO-xFgCzW1FhKSxIsDH-2Er20NmwMEC29rxcQRv5XlamHDa-XhYxXZgfNXRw_2EPcKyIrPt62DUv4XhC09cuNHJT3mq_FczH4D6jJsYdsbPXc0UoGd4rNfJgwApDJWKN8NCDlpsP-902BIDeBKqykx7TUB69mzzXmtgzmc9A8c">
-</div>
-</div>
-</section>
-<!-- URGENCY BANNER -->
-<section class="bg-[#0F0A1E] py-16 px-gutter">
-<div class="max-w-max-width mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-white mb-2">Limited Slots Available</h2>
-<p class="text-on-primary-container text-body-lg">Only 5 students will be selected for this exclusive cohort.</p>
-</div>
-<a class="bg-[#FBBF24] text-[#0F0A1E] px-10 py-5 rounded-full font-display-lg text-body-lg font-bold hover:scale-105 transition-transform flex items-center gap-2 justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_pbY8EssCN7UijzTfmuaw4qTHxgEmGt_gPhjiBy0PyTAag/viewform" target="_blank">
-                    Apply for Free 
+            </div>
+        </section>
+        <!-- QUICK PROGRAM DETAILS GRID -->
+        <section class="bg-white py-10 border-b border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">diversity_3</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Class
+                            Format</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">1-on-1 Live Mentorship</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">child_care</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Age
+                            Group</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">Grades 5 to 12</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">calendar_today</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">
+                            Duration</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">4 Weeks</p>
+                    </div>
+                    <div
+                        class="p-4 flex flex-col items-center gap-2 md:border-r border-outline-variant/30 md:last:border-r-0 col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">schedule</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">Time
+                            Commitment</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">4 Hrs/Wk (Flexible)</p>
+                    </div>
+                    <div class="p-4 flex flex-col items-center gap-2 col-span-2 md:col-span-1">
+                        <span
+                            class="material-symbols-outlined text-primary text-[28px] bg-primary/10 p-2.5 rounded-2xl">payments</span>
+                        <h5 class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant/70 mt-1">
+                            Program Fee</h5>
+                        <p class="font-bold text-sm text-on-background leading-tight">First Session Free</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT THE PROGRAM -->
+        <section class="py-12 md:py-24 px-gutter max-w-max-width mx-auto" id="program">
+            <div class="text-center mb-16">
+                <span
+                    class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">THE
+                    PROGRAM</span>
+                <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Not Just Another Coding Class</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-primary text-[32px]">video_chat</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-4">Live 1-on-1 Classes</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Personalized attention from
+                        professional developers who guide your child through every complex concept.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active"
+                    style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-primary text-[32px]">handyman</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-4">Hands-On Learning</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">We move past theory quickly. Students
+                        spend 80% of their time actually building and coding.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="reveal bg-white p-10 rounded-2xl soft-glow hover:-translate-y-2 transition-all duration-300 active"
+                    style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-primary text-[32px]">rocket</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-4">Real Projects</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">From chatbots to personal assistants,
+                        your child creates portfolio-ready projects they can show off.</p>
+                </div>
+            </div>
+        </section>
+        <!-- STUDENT PROJECTS SHOWCASE -->
+        <section class="bg-surface-container-low py-12 md:py-24 border-y border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <span
+                        class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">Student
+                        Portfolio</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">What Your Child Will Actually
+                        Build</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        We ditch boring worksheets. Students learn computer science by designing, coding, and deploying
+                        real AI tools that they can proudly show off.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                    <!-- Project 1: Hospital Assistant -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Hospital Management Assistant Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="/assets/hospital_dashboard-DKDrbuGy.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    1: Healthcare</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Hospital Assistant</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    An AI dashboard that manages patient queues, allocates beds, schedules doctors, and
+                                    summarizes reports.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Bed
+                                    Allocation</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Doctor
+                                    Scheduling</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Report
+                                    Summarization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Customer Support Agent -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Customer Support Agent Widget"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="/assets/customer_agent-DpaCtALJ.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    2: Automation</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Customer Agent</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A support agent that automatically answers queries, generates price quotes, and
+                                    books meetings.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Answers
+                                    Queries</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Generates
+                                    Quotes</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Books
+                                    Meetings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Real Estate Agent -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Real Estate Sales Agent Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="/assets/real_estate_agent-BKDh4uhC.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    3: Conversational AI</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Real Estate Agent</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A chatbot that interacts with prospective property buyers, schedules visits, and
+                                    calculates EMI.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Recommends
+                                    Properties</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Calculates
+                                    EMI</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Qualifies
+                                    Leads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Personal Finance Advisor -->
+                    <div
+                        class="flex flex-col gap-4 bg-white p-4 rounded-2xl soft-glow border border-outline-variant/30 animate-reveal">
+                        <img alt="AI Personal Finance Advisor Dashboard"
+                            class="rounded-xl w-full aspect-[4/3] object-cover border border-outline-variant/40 shadow-sm hover:scale-[1.01] transition-transform duration-300"
+                            src="/assets/finance_advisor-HBk_-BGC.png">
+                        <div class="flex flex-col flex-grow justify-between gap-3">
+                            <div>
+                                <span
+                                    class="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-0.5 rounded-full inline-block">Project
+                                    4: FinTech</span>
+                                <h3 class="text-sm md:text-base font-bold text-on-background mt-2 mb-1.5 leading-tight">
+                                    AI Finance Advisor</h3>
+                                <p class="text-xs text-on-surface-variant/90 mb-3 leading-relaxed">
+                                    A finance manager that processes bank statement uploads to plan budgets and suggest
+                                    investments.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Expense
+                                    Analysis</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Budget
+                                    Planning</span>
+                                <span
+                                    class="bg-background text-primary px-2 py-0.5 rounded-full text-[9px] font-bold">Savings
+                                    Advice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="bg-surface-container py-12 md:py-24" id="how-it-works">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-on-background">How It Works</h2>
+                </div>
+                <div class="relative flex flex-col md:flex-row justify-between gap-8 md:gap-4">
+                    <!-- Progress Line (Desktop) -->
+                    <div
+                        class="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-[2px] bg-outline-variant -z-10">
+                    </div>
+                    <!-- Step 1 -->
+                    <div class="reveal flex-1 text-center group active">
+                        <div
+                            class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">
+                            1</div>
+                        <h4 class="font-headline-md text-[18px] mb-2">Apply Online</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant px-4">Tell us about your child's
+                            interest and goals.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="reveal flex-1 text-center group active" style="transition-delay: 100ms;">
+                        <div
+                            class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">
+                            2</div>
+                        <h4 class="font-headline-md text-[18px] mb-2">Get Selected</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant px-4">Our developers review
+                            applications for the right fit.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="reveal flex-1 text-center group active" style="transition-delay: 200ms;">
+                        <div
+                            class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">
+                            3</div>
+                        <h4 class="font-headline-md text-[18px] mb-2">Live 1-on-1 Sessions</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant px-4">Learn coding and AI from
+                            industry pros at your own pace.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="reveal flex-1 text-center group active" style="transition-delay: 300ms;">
+                        <div
+                            class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 font-bold shadow-lg group-hover:scale-110 transition-transform">
+                            4</div>
+                        <h4 class="font-headline-md text-[18px] mb-2">Build &amp; Present</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant px-4">Showcase the AI project to
+                            family and friends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PARENT TESTIMONIALS (EMOTIONAL REASSURANCE & TRUST) -->
+        <section
+            class="bg-gradient-to-tr from-primary-container/5 via-white to-secondary-container/5 py-12 md:py-24 border-y border-outline-variant/30">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <span
+                        class="font-label-md text-label-md text-primary bg-primary/10 px-4 py-1.5 rounded-full uppercase">Parent
+                        Stories</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Loved by Parents, Inspired by
+                        Builders</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        Hear how our 1-on-1 developer mentors have helped students build analytical confidence, shift
+                        from passive consumers to creative engineers, and find a safe space to grow.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "My daughter Sarah was obsessed with scrolling on social media. After just 4 weeks with
+                                Arjun, she's now building her own AI Study bot! Shifting her from a passive consumer to
+                                an active creator has done wonders for her confidence and school grades."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Melissa K.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Mother of Sarah (Grade 8) — NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "As a non-tech parent, I was worried coding would be too dry or intimidating for Rohan.
+                                Priya was so patient. She turned complex algorithms into a fun game. Rohan looked
+                                forward to every session—it's the first time he's been excited about learning math and
+                                logic!"
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Dr. Rajesh N.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Father of Rohan (Grade 6) — CA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white p-4 md:p-6 lg:p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col justify-between col-span-2 md:col-span-1 max-w-[calc(50%-12px)] md:max-w-none mx-auto w-full">
+                        <div class="flex flex-col gap-3">
+                            <!-- Star Rating -->
+                            <div class="flex text-amber-400 gap-0.5 md:gap-1">
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                                <span
+                                    class="material-symbols-outlined fill-1 text-[15px] md:text-[18px] lg:text-[20px]">star</span>
+                            </div>
+                            <p class="text-[11px] md:text-sm lg:text-body-md text-on-background italic leading-relaxed">
+                                "What I love most is the focus on emotional safety. When my son Tyler's code failed, his
+                                mentor Rahul didn't just give the answer—he taught Tyler how to troubleshoot and embrace
+                                mistakes as part of the learning cycle. Tyler's resilience has grown immensely."
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 mt-4 pt-3 md:mt-8 md:pt-6 border-t border-outline-variant/30">
+                            <div>
+                                <h4 class="font-bold text-xs md:text-sm text-on-background">Amanda L.</h4>
+                                <p class="text-[9px] md:text-xs text-on-surface-variant">Mother of Tyler (Grade 10) —
+                                    London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEET YOUR MENTORS -->
+        <section class="py-12 md:py-24 px-gutter">
+            <div class="max-w-max-width mx-auto">
+                <div class="text-center mb-16">
+                    <span class="font-label-md text-label-md text-primary font-bold tracking-widest uppercase">YOUR
+                        MENTORS</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">Taught by Developers Who
+                        Actually Build with AI</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        Not teachers. Not instructors. Real developers working on real products who also love teaching
+                        kids.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Mentor 1 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+                            <img alt="Arjun Mehta" class="w-32 h-32 rounded-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8wVWlIWx2uZZH_ykS3SGLMWstxw7Pyy0mmKwfO3hd7HPLJ_4Qrj5aMAt-T9WHLQfjEqWWfx-ph-fV3akh89Dj52hF-hnvzZ6EkVWFGH3D3qcpt1tcCUa_3oasHbB0PPhohVQeNYUdJvQbUdcxtBcIbqQF-TqvmGGPCinHz9XTVTjb_UmBQy3coLRmK_FZcM2zduzpxOTag5TD1BaCg0XTOwxweyhgz3LeSB_EFT4dLU-5UG7zwOOfA4fPOwoLxXeLCUVttQ3Ojjo">
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-1">Arjun Mehta</h3>
+                        <p class="font-label-md text-primary mb-4">Full Stack Developer with 5 years of experience</p>
+                        <div
+                            class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+                            <span class="">🔨</span> Currently building: AI-powered SaaS dashboard
+                        </div>
+                        <p class="font-body-md text-on-surface-variant mb-6">
+                            Arjun builds production apps used by thousands of users daily. He mentors because he wishes
+                            he had someone like this at age 15.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-2">
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">React</span>
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Node.js</span>
+                            <span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">OpenAI
+                                API</span>
+                        </div>
+                    </div>
+                    <!-- Mentor 2 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+                            <img alt="Priya Nair" class="w-32 h-32 rounded-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUPzKIIMV1uZqS1vyEbKb9eBSiI4J47Xi8xC0Wo7uiw-IqwJ3789xoCiYZQa4mrA9bD2bHIKGACWSXAolERO7rNL4m0Pf1NZYRYZsSPk90ZTi5Y8-fQJeKiHSIU3vZoxTzQNiKd-Cth5matvmuS2aA99XaZcJc95eLCczHdbfg1hCRkLt-1u3ORxcRfb6oyKj2wuJwRVP4YfL71gy9rK4PXP43FoaZKs8bATbmJrlYKj40H2igQzyB2zbVk44Y-6RBPdtGKA75d4g">
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-1">Priya Nair</h3>
+                        <p class="font-label-md text-primary mb-4">Automation Engineer with 4 years of experience</p>
+                        <div
+                            class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+                            <span class="">🔨</span> Currently building: No-code AI workflow tools
+                        </div>
+                        <p class="font-body-md text-on-surface-variant mb-6">
+                            Priya specializes in making AI practical and accessible. She turns complex concepts into
+                            things students can build in a weekend.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-2">
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Zapier</span>
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">LangChain</span>
+                        </div>
+                    </div>
+                    <!-- Mentor 3 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl soft-glow border border-outline-variant/30 flex flex-col items-center text-center">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 border-2 border-primary rounded-full scale-110"></div>
+                            <img alt="Rahul Sharma" class="w-32 h-32 rounded-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXfm85H_IpHTp3mIHYciWCO8DxS4xU4mqC-s0kJXoEVTiiq6P8uOkNYuSi5cpRJd_EiDVQ1g3QnnGcw9OFFI47syo9ZlUIQN0S_9YG4xt8bx3mqbGJV2rQLUcH3WtZ8mK4I9fFcA33lCZeFYDBu7PWsh_ZMlvzkC1EaJKEz9YflmMgmNdHjFqyqTeUV_5MHBOy3R1hB2UZpgH67uC2DFPbufFXbFmrrkCEhFRzcbCB9dwEgMydW1Dlap94xT8MVxNDWgvwKKD0II">
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-1">Rahul Sharma</h3>
+                        <p class="font-label-md text-primary mb-4">AI/ML Developer with 6 years of experience</p>
+                        <div
+                            class="bg-[#FBBF24] text-[#1d182d] px-3 py-1 rounded-full text-[12px] font-bold mb-4 flex items-center gap-1">
+                            <span class="">🔨</span> Currently building: Computer vision app for retail
+                        </div>
+                        <p class="font-body-md text-on-surface-variant mb-6">
+                            Rahul has shipped models to real clients across 3 countries. He believes the best way to
+                            learn AI is to build something that actually works.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-2">
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Python</span>
+                            <span
+                                class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">TensorFlow</span>
+                            <span class="bg-[#EDE9FE] text-primary px-3 py-1 rounded-full text-[12px] font-bold">Prompt
+                                Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#EDE9FE] py-10 md:py-16">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <h2 class="font-headline-md text-headline-md text-center mb-12 text-on-background">Why Our Mentors Are
+                    Different</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-white text-[24px]">bolt</span>
+                        </div>
+                        <h4 class="font-bold mb-2">Active in Industry</h4>
+                        <p class="text-body-md text-on-surface-variant px-2">They don't just know theory; they ship
+                            code weekly.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-white text-[24px]">target</span>
+                        </div>
+                        <h4 class="font-bold mb-2">Project-First Teaching</h4>
+                        <p class="text-body-md text-on-surface-variant px-2">Every session is built around something
+                            you'll actually make.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-white text-[24px]">handshake</span>
+                        </div>
+                        <h4 class="font-bold mb-2">1-on-1 Attention</h4>
+                        <p class="text-body-md text-on-surface-variant px-2">No class of 30. Just you and your mentor,
+                            focused entirely on your growth.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-white text-[24px]">public</span>
+                        </div>
+                        <h4 class="font-bold mb-2">Real-World Context</h4>
+                        <p class="text-body-md text-on-surface-variant px-2">They bring real problems from real projects
+                            into every lesson.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHAT YOU'LL LEARN SECTION -->
+        <section class="py-12 md:py-24 bg-gradient-to-br from-[#FAF5FF] to-[#FDF2F8]">
+            <div class="max-w-max-width mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <span class="font-label-md text-label-md text-[#5B21B6] uppercase tracking-widest font-bold">THE
+                        CURRICULUM</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-4 text-on-background">A Syllabus Built for the Real
+                        World</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">
+                        We cover the foundations, but we never stop at them. If something exciting drops in AI this
+                        week, we teach it this week.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden border-b-[3px] border-b-transparent active"
+                        style="border-image: linear-gradient(to right, #EF4444, #3B82F6) 1;">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">memory</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">Intro to AI</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">From machine
+                            learning to neural networks: understand how AI actually thinks.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 2 (FEATURED) -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden border-2 border-[#3B82F6] active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">work</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">AI for Business &amp; Productivity</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI tools to
+                            work smarter, automate tasks, and solve real problems.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">bar_chart</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">Data Analysis with AI</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Process large
+                            datasets quickly and turn raw numbers into useful insights.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">chat_bubble</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">Natural Language Processing</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">The tech behind
+                            ChatGPT, voice assistants, and smart search, demystified.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">verified_user</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">AI Ethics &amp; Responsibility</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Use AI wisely.
+                            Understand bias, privacy, and what it means to build responsibly.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">settings_suggest</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">Automation &amp; Workflows</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Build tools that
+                            work for you and automate boring tasks with no-code and low-code AI.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">video_library</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">Image &amp; Video AI</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">How AI sees the
+                            world: image recognition, video analysis, and real applications.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div
+                        class="reveal bg-white p-6 rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden active">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#6D28D9] to-[#4F46E5] rounded-[12px] flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-white text-[24px]">smart_toy</span>
+                        </div>
+                        <h4 class="font-headline-md text-[18px] mb-3">AI in Gaming &amp; Creativity</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Generate art,
+                            music, and game logic using AI. Create things that didn't exist before.</p>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#EF4444] to-[#3B82F6]">
+                        </div>
+                    </div>
+                </div>
+                <!-- LIVING SYLLABUS BANNER -->
+                <div
+                    class="mt-12 bg-[#FFFBEB] rounded-[16px] border-l-4 border-[#FBBF24] p-8 flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined text-[#1d182d] text-[24px] font-bold">bolt</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-md text-[18px] font-bold text-on-background mb-1">This syllabus is
+                            alive.</h4>
+                        <p class="font-body-md text-on-surface-variant">AI moves fast, and so do we. We update projects
+                            and tools weekly to ensure you're learning what's relevant right now.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHO IS THIS FOR -->
+        <section class="py-12 md:py-24 max-w-max-width mx-auto px-gutter overflow-hidden" id="program">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal active">
+                    <h2 class="font-headline-lg text-headline-lg mb-8">Built for Curious, Ambitious Students</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-on-surface">Grade 5-12 Students</h4>
+                                <p class="text-on-surface-variant text-body-md">Optimized curriculum for middle and high
+                                    school minds.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-on-surface">No coding experience required</h4>
+                                <p class="text-on-surface-variant text-body-md">We start from the basics and scale up
+                                    fast with AI tools.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-on-surface">Students who want to build, not watch</h4>
+                                <p class="text-on-surface-variant text-body-md">Ditch the passive tutorials for active
+                                    creation.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary text-[16px] font-bold">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-on-surface">Master AI Generation</h4>
+                                <p class="text-on-surface-variant text-body-md">Learn to prompt and build using the
+                                    latest LLM technologies.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reveal relative flex justify-center active">
+                    <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+                    <img alt="Profile of a student project card" class="relative max-w-md w-full soft-glow rounded-3xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwb4Hs3wM-i2GTuXUrcoCVoLSUSf5sZTVpvtw0WLDbqHujbxg-YCZzU_EVHapVx0OJDHx45td0j5_X5cR7ZioFpv-2LpKF-6YPtNO-xFgCzW1FhKSxIsDH-2Er20NmwMEC29rxcQRv5XlamHDa-XhYxXZgfNXRw_2EPcKyIrPt62DUv4XhC09cuNHJT3mq_FczH4D6jJsYdsbPXc0UoGd4rNfJgwApDJWKN8NCDlpsP-902BIDeBKqykx7TUB69mzzXmtgzmc9A8c">
+                </div>
+            </div>
+        </section>
+        <!-- URGENCY BANNER -->
+        <section class="bg-[#0F0A1E] py-10 md:py-16 px-gutter">
+            <div
+                class="max-w-max-width mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-white mb-2">Limited Slots Available</h2>
+                    <p class="text-on-primary-container text-body-lg">Only 5 students will be selected for this
+                        exclusive cohort.</p>
+                </div>
+                <a class="bg-[#FBBF24] text-[#0F0A1E] px-10 py-5 rounded-full font-display-lg text-body-lg font-bold hover:scale-105 transition-transform flex items-center gap-2 justify-center apply-trigger"
+                    href="javascript:void(0)">
+                    Book Free Trial
                     <span class="material-symbols-outlined font-bold">arrow_forward</span>
-</a>
-</div>
-</section>
-<!-- FAQ -->
-<section class="py-section-v-lg px-gutter max-w-3xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-center mb-12">Frequently Asked Questions</h2>
-<div class="space-y-4">
-<!-- FAQ 1 -->
-<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden" open="">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        Is this really free?
-                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Yes! The first session is free for everyone, and the full 4-week program is completely free for selected students as part of our mission to democratize AI literacy.
+                </a>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="py-12 md:py-24 px-gutter max-w-3xl mx-auto">
+            <h2 class="font-headline-lg text-headline-lg text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden" open="">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        How does the free first session work? Is there any catch?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        The first 1-on-1 live session is 100% free with absolutely no credit card required or hidden
+                        commitment. It serves as a full 60-minute trial class where your child will build their very
+                        first mini-AI script with our developer mentor. If they love the experience and you choose to
+                        continue with the full program, we will share transparent enrollment and pricing plans at the
+                        end of that first session.
                     </div>
-</details>
-<!-- FAQ 2 -->
-<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        What technology will my child use?
-                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Students use modern web frameworks, AI prompting interfaces, and professional code editors similar to what developers at big tech companies use.
+                </details>
+                <!-- FAQ 2 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What if my child has absolutely zero coding experience?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        That is completely fine! Over 80% of our students start with zero prior coding or computer
+                        science knowledge. Since classes are strictly 1-on-1, our developer mentors adapt the pace
+                        entirely to your child's comfort level, ensuring they feel supported and never overwhelmed.
                     </div>
-</details>
-<!-- FAQ 3 -->
-<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        How are students selected?
-                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        Selection is based on the applicant's curiosity, passion for learning, and a short assessment of their problem-solving potential.
+                </details>
+                <!-- FAQ 3 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        How are the class timings scheduled?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        We offer completely flexible timings. Once selected, you and your assigned mentor will align on
+                        weekly slots that fit perfectly around your child's school, homework, and extracurricular
+                        schedules. If a session needs to be rescheduled, you can do so easily with 24 hours notice.
                     </div>
-</details>
-<!-- FAQ 4 -->
-<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
-                        What is the time commitment?
-                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        The program involves two 1-hour live sessions per week, plus about 2 hours of self-paced building time.
+                </details>
+                <!-- FAQ 4 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        Is the online class environment safe for my child?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Absolutely. Safety is our number one priority. Every single mentor is a professional software
+                        developer who has undergone rigorous technical screening, criminal background checks, and
+                        reference audits. All classes are conducted over secure, private video rooms, and sessions are
+                        recorded for safety auditing and quality reviews.
                     </div>
-</details>
-<!-- FAQ 5 -->
-<details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                </details>
+                <!-- FAQ 5 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What is the live class format?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Classes are 1-on-1, live, and highly interactive. Rather than watching passive slide
+                        presentations, students share their screens and pair-program alongside an active software
+                        developer. It feels like a collaborative workshop where the student spends 80% of the time
+                        writing code and building.
+                    </div>
+                </details>
+                <!-- FAQ 6 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What technology and tools will my child use?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Students work with modern web frameworks, actual code editors (like VS Code), AI API
+                        playgrounds, and low-code flow builders. We teach them the exact tools that professional
+                        engineers at tech companies use, rather than toy coding blocks.
+                    </div>
+                </details>
+                <!-- FAQ 7 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        How are students selected for the cohort?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Selection is based on a short online assessment that checks the student's problem-solving
+                        potential, curiosity, and eagerness to build. We look for ambition and a passion for learning
+                        rather than previous academic grades or technical history.
+                    </div>
+                </details>
+                <!-- FAQ 8 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
+                        What is the weekly time commitment?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        The program involves four 1-hour live sessions per week, plus approximately 2 hours of
+                        self-paced building and experimentation outside of class.
+                    </div>
+                </details>
+                <!-- FAQ 9 -->
+                <details class="group bg-white rounded-2xl border border-outline-variant overflow-hidden">
+                    <summary
+                        class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-md text-[18px]">
                         Do parents need to attend the classes?
-                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-</summary>
-<div class="p-6 pt-0 font-body-md text-on-surface-variant">
-                        No, classes are designed for the student and developer only. However, parents are invited to the final Showcase session at the end of week 4.
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        No, classes are designed strictly for the student and the mentor. However, we invite parents to
+                        join the final Showcase session at the end of week 4, where your child will present their
+                        working AI projects live!
                     </div>
-</details>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full rounded-t-xl bg-surface-container-lowest border-t border-outline-variant">
-<div class="flex flex-col md:flex-row justify-between items-start gap-8 px-gutter py-section-v-md max-w-max-width mx-auto">
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-2.5">
-<img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
-<span class="text-headline-md font-display-lg tracking-tight font-bold">
-<span class="text-primary">Aura</span><span class="text-on-background">Minds</span>
-</span>
-</div>
-<p class="max-w-xs text-on-surface-variant font-body-md">Building the next generation of AI innovators and digital magicians.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md font-bold text-primary">Explore</span>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">How It Works</a>
-</div>
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md font-bold text-primary">Company</span>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">Contact</a>
-</div>
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md font-bold text-primary">Social</span>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20pilot%20tutoring%20program.">WhatsApp</a>
-</div>
-</div>
-</div>
-<div class="max-w-max-width mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center md:text-left">
-<p class="text-on-surface-variant font-label-md text-label-md">© 2026 AuraMinds. All rights reserved.</p>
-</div>
-</footer>
-<script>
+                </details>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full rounded-t-xl bg-surface-container-lowest border-t border-outline-variant">
+        <div
+            class="flex flex-col md:flex-row justify-between items-start gap-8 px-gutter py-10 md:py-20 max-w-max-width mx-auto">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-2.5">
+                    <img src="/logo-icon.png" alt="AuraMinds Logo" class="h-9 w-auto">
+                    <span class="text-headline-md font-display-lg tracking-tight font-bold">
+                        <span class="text-primary">Aura</span><span class="text-on-background">Minds</span>
+                    </span>
+                </div>
+                <p class="max-w-xs text-on-surface-variant font-body-md">Building the next generation of AI innovators
+                    and digital magicians.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="flex flex-col gap-4">
+                    <span class="font-label-md text-label-md font-bold text-primary">Explore</span>
+                    <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">How
+                        It Works</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="font-label-md text-label-md font-bold text-primary">Company</span>
+                    <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">Contact</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="font-label-md text-label-md font-bold text-primary">Social</span>
+                    <a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md"
+                        href="https://wa.me/918500125135?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20AI%20tutoring%20program.">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-max-width mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center md:text-left">
+            <p class="text-on-surface-variant font-label-md text-label-md">© 2026 AuraMinds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Apply Now Popup -->
+    <div id="apply-popup"
+        class="fixed bottom-6 right-6 z-50 max-w-sm w-[calc(100%-3rem)] bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-primary/20 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-500 ease-out flex flex-col gap-4">
+        <button id="close-popup"
+            class="absolute top-3 right-3 text-on-surface-variant/60 hover:text-on-surface transition-colors"
+            aria-label="Close popup">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+        <div class="flex items-start gap-4">
+            <div
+                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                <span class="material-symbols-outlined text-[24px]">school</span>
+            </div>
+            <div>
+                <h4 class="font-bold text-on-background text-[16px] leading-tight">Secure Your Child's Space</h4>
+                <p class="text-xs text-on-surface-variant mt-1">Registrations close this Wednesday. The first 1-on-1
+                    session is completely free!</p>
+            </div>
+        </div>
+        <div class="flex gap-3 justify-end items-center">
+            <button id="dismiss-popup-btn"
+                class="px-4 py-2 text-xs font-semibold text-on-surface-variant hover:text-on-surface transition-colors">Maybe
+                Later</button>
+            <a id="apply-popup-link" href="javascript:void(0)"
+                class="bg-primary text-white px-5 py-2 rounded-full text-xs font-bold hover:scale-105 hover:shadow-md active:scale-95 transition-all inline-block text-center apply-trigger">Apply
+                Now</a>
+        </div>
+    </div>
+
+    <!-- Interactive Form Modal -->
+    <div id="apply-modal"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-500 ease-out p-4">
+        <!-- Modal Backdrop Close Click Area -->
+        <div class="absolute inset-0" id="modal-backdrop"></div>
+
+        <!-- Modal Card Content -->
+        <div
+            class="relative bg-white/95 w-full max-w-lg rounded-3xl shadow-2xl border border-primary/20 overflow-hidden transform scale-90 opacity-0 transition-all duration-500 ease-out z-10">
+
+            <!-- Header Banner Pattern -->
+            <div class="bg-gradient-to-br from-primary via-primary-container to-secondary p-8 text-white relative">
+                <button id="close-modal"
+                    class="absolute top-4 right-4 text-white/80 hover:text-white transition-colors bg-black/20 hover:bg-black/40 rounded-full p-1.5 flex items-center justify-center"
+                    aria-label="Close modal">
+                    <span class="material-symbols-outlined text-[20px]">close</span>
+                </button>
+                <span
+                    class="bg-amber-400 text-primary font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full inline-block mb-3 select-none">
+                    🌟 First Session Free
+                </span>
+                <h3 class="font-display-lg-mobile font-bold text-2xl md:text-3xl leading-tight">Start Your Child's AI
+                    Journey</h3>
+                <p class="text-white/85 text-xs md:text-sm mt-1">Book your free 1-hour live demo session. Only 5 slots
+                    available.</p>
+            </div>
+
+            <!-- Form Container -->
+            <form id="booking-form" class="p-6 md:p-8 flex flex-col gap-5">
+                <!-- 1. Child's Name -->
+                <div class="flex flex-col gap-1.5">
+                    <label for="child-name" class="font-semibold text-xs text-primary uppercase tracking-wider">Child's
+                        First Name</label>
+                    <div class="relative">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">face</span>
+                        <input type="text" id="child-name" name="childName" required placeholder="e.g. Aarav"
+                            class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
+                    </div>
+                </div>
+
+                <!-- 2. Grade Dropdown -->
+                <div class="flex flex-col gap-1.5">
+                    <label for="student-grade"
+                        class="font-semibold text-xs text-primary uppercase tracking-wider">Child's Grade</label>
+                    <div class="relative">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">school</span>
+                        <select id="student-grade" name="grade" required
+                            class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer">
+                            <option value="" disabled selected>Which grade is your child in?</option>
+                            <option value="Grade 5">Grade 5</option>
+                            <option value="Grade 6">Grade 6</option>
+                            <option value="Grade 7">Grade 7</option>
+                            <option value="Grade 8">Grade 8</option>
+                            <option value="Grade 9">Grade 9</option>
+                            <option value="Grade 10">Grade 10</option>
+                            <option value="Grade 11">Grade 11</option>
+                            <option value="Grade 12">Grade 12</option>
+                        </select>
+                        <span
+                            class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none">expand_more</span>
+                    </div>
+                </div>
+
+                <!-- 3. Parent's WhatsApp Number -->
+                <div class="flex flex-col gap-1.5">
+                    <label for="parent-whatsapp"
+                        class="font-semibold text-xs text-primary uppercase tracking-wider">Parent's WhatsApp
+                        Number</label>
+                    <div class="flex gap-2">
+                        <!-- Country Code Dropdown -->
+                        <div class="relative w-[110px] flex-shrink-0">
+                            <span
+                                class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[18px]">public</span>
+                            <select id="country-code" name="countryCode" required
+                                class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3.5 pl-8 pr-6 text-xs focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer font-semibold">
+                                <option value="+1" selected>🇺🇸 +1</option>
+                                <option value="+91">🇮🇳 +91</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <option value="+61">🇦🇺 +61</option>
+                                <option value="+971">🇦🇪 +971</option>
+                                <option value="+65">🇸🇬 +65</option>
+                                <option value="+1">🇨🇦 +1</option>
+                                <option value="+60">🇲🇾 +60</option>
+                                <option value="+353">🇮🇪 +353</option>
+                                <option value="+64">🇳🇿 +64</option>
+                            </select>
+                            <span
+                                class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none text-[18px]">expand_more</span>
+                        </div>
+
+                        <!-- Number Input -->
+                        <div class="relative flex-grow">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">call</span>
+                            <input type="tel" id="parent-whatsapp" name="whatsapp" required
+                                placeholder="e.g. 555 123 4567"
+                                class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background">
+                        </div>
+                    </div>
+                    <p id="whatsapp-error" class="text-red-500 text-[11px] mt-1 hidden">Please enter a valid phone
+                        number (7 to 15 digits).</p>
+                </div>
+
+                <!-- 4. Best Time Dropdown -->
+                <div class="flex flex-col gap-1.5">
+                    <label for="best-time" class="font-semibold text-xs text-primary uppercase tracking-wider">Best Time
+                        for Free Demo Call</label>
+                    <div class="relative">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 text-[20px]">schedule</span>
+                        <select id="best-time" name="bestTime" required
+                            class="w-full bg-surface-container-low border border-outline-variant/60 rounded-xl py-3 pl-10 pr-4 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-all text-on-background appearance-none cursor-pointer">
+                            <option value="" disabled selected>Select preferred time slot</option>
+                            <option value="Morning">Morning</option>
+                            <option value="Afternoon">Afternoon</option>
+                            <option value="Evening">Evening</option>
+                        </select>
+                        <span
+                            class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant/40 pointer-events-none">expand_more</span>
+                    </div>
+                </div>
+
+                <!-- Submit Button & Loading State -->
+                <div class="pt-2 flex flex-col gap-3">
+                    <button type="submit" id="submit-booking-btn"
+                        class="w-full bg-primary hover:bg-secondary text-white py-3.5 px-6 rounded-xl font-bold hover:scale-[1.02] hover:shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2 text-sm">
+                        <span>Confirm Free Demo Class 🚀</span>
+                        <!-- Spinner Element -->
+                        <svg id="submit-spinner" class="animate-spin h-5 w-5 text-white hidden"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="text-center text-[10px] text-on-surface-variant/70">By submitting, you agree to receive
+                        WhatsApp communications from AuraMinds developers regarding your demo scheduling.</p>
+                </div>
+            </form>
+
+            <!-- Success Confirmation State (Hidden initially) -->
+            <div id="booking-success" class="p-8 flex flex-col items-center text-center gap-5 hidden animate-fade-in">
+                <div
+                    class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center text-green-500 shadow-inner">
+                    <span class="material-symbols-outlined text-[48px] font-bold">verified</span>
+                </div>
+                <div>
+                    <h4 class="font-bold text-on-background text-2xl">Demo Call Requested! 🎉</h4>
+                    <p class="text-sm text-on-surface-variant mt-2 max-w-sm mx-auto">
+                        Thank you! Arjun or Priya will reach out to you on WhatsApp within <span
+                            class="font-semibold text-primary">2 hours</span> to confirm the
+                        specific time slot for <span id="success-child-name" class="font-bold text-primary">your
+                            child</span>.
+                    </p>
+                </div>
+                <button id="success-dismiss-btn"
+                    class="w-full max-w-xs bg-[#FBBF24] hover:bg-amber-500 text-on-background py-3 rounded-xl font-bold transition-all mt-2 active:scale-95 shadow-md">
+                    Awesome, Got It!
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
         // Scroll Reveal Animation
         const observerOptions = {
             threshold: 0.1
@@ -650,7 +1399,237 @@
                 header.classList.remove('shadow-md');
             }
         });
+
+        // ==========================================
+        // COUNTDOWN TIMER LOGIC
+        // ==========================================
+        function getNextWednesdayDeadline() {
+            const now = new Date();
+            const targetDay = 3; // Wednesday
+            const currentDay = now.getDay();
+
+            let daysUntilTarget = targetDay - currentDay;
+            if (daysUntilTarget <= 0) {
+                daysUntilTarget += 7;
+            }
+
+            const targetDate = new Date(now);
+            targetDate.setDate(now.getDate() + daysUntilTarget);
+            targetDate.setHours(23, 59, 59, 999); // Midnight at end of Wednesday
+            return targetDate;
+        }
+
+        const deadline = getNextWednesdayDeadline();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = deadline - now;
+
+            if (difference <= 0) {
+                document.getElementById('countdown-timer').innerHTML = "EXPIRED";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            const dStr = String(days).padStart(2, '0');
+            const hStr = String(hours).padStart(2, '0');
+            const mStr = String(minutes).padStart(2, '0');
+            const sStr = String(seconds).padStart(2, '0');
+
+            document.getElementById('countdown-timer').innerHTML = `${dStr}d ${hStr}h ${mStr}m ${sStr}s`;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // ==========================================
+        // APPLY NOW POPUP LOGIC
+        // ==========================================
+        const popup = document.getElementById('apply-popup');
+        const closePopupBtn = document.getElementById('close-popup');
+        const dismissPopupBtn = document.getElementById('dismiss-popup-btn');
+        const applyPopupLink = document.getElementById('apply-popup-link');
+
+        let popupTimer = null;
+
+        function showPopup() {
+            popup.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            popup.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        }
+
+        function hidePopup() {
+            popup.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            popup.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            scheduleNextPopup();
+        }
+
+        function scheduleNextPopup() {
+            if (popupTimer) clearTimeout(popupTimer);
+            popupTimer = setTimeout(showPopup, 60000); // Trigger every 60 seconds
+        }
+
+        if (closePopupBtn) closePopupBtn.addEventListener('click', hidePopup);
+        if (dismissPopupBtn) dismissPopupBtn.addEventListener('click', hidePopup);
+
+        scheduleNextPopup();
+
+        // ==========================================
+        // INTERACTIVE MODAL & BOOKING FORM LOGIC
+        // ==========================================
+        const applyModal = document.getElementById('apply-modal');
+        const modalOverlay = applyModal.querySelector('.relative'); // The card itself
+        const modalBackdrop = document.getElementById('modal-backdrop');
+        const closeModalBtn = document.getElementById('close-modal');
+        const bookingForm = document.getElementById('booking-form');
+        const bookingSuccess = document.getElementById('booking-success');
+        const submitBtn = document.getElementById('submit-booking-btn');
+        const submitSpinner = document.getElementById('submit-spinner');
+        const successDismissBtn = document.getElementById('success-dismiss-btn');
+        const successChildName = document.getElementById('success-child-name');
+
+        // Configurable script endpoint (Paste your Web App URL here from google_sheets_setup.md)
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxMkLnK86gOHDcyjyO2duiob5eVSnpcAN5ija3et0Uo28IJsJXkTUrAXuWtFtZgrks/exec";
+
+        function openModal() {
+            applyModal.classList.remove('opacity-0', 'pointer-events-none');
+            applyModal.classList.add('opacity-100');
+
+            // Scale-in the card
+            modalOverlay.classList.remove('scale-90', 'opacity-0');
+            modalOverlay.classList.add('scale-100', 'opacity-100');
+        }
+
+        function closeModal() {
+            // Scale-out the card
+            modalOverlay.classList.remove('scale-100', 'opacity-100');
+            modalOverlay.classList.add('scale-90', 'opacity-0');
+
+            setTimeout(() => {
+                applyModal.classList.remove('opacity-100');
+                applyModal.classList.add('opacity-0', 'pointer-events-none');
+
+                // Reset states
+                bookingForm.reset();
+                bookingForm.classList.remove('hidden');
+                bookingSuccess.classList.add('hidden');
+                submitBtn.disabled = false;
+                submitSpinner.classList.add('hidden');
+            }, 300); // Sync with CSS transition
+        }
+
+        // Bind open trigger to all elements with class '.apply-trigger'
+        document.querySelectorAll('.apply-trigger').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal();
+            });
+        });
+
+        if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+        if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+        if (successDismissBtn) successDismissBtn.addEventListener('click', closeModal);
+
+        // Handle form submission
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const childName = document.getElementById('child-name').value.trim();
+            const grade = document.getElementById('student-grade').value;
+            const countryCode = document.getElementById('country-code').value;
+            const phoneNumber = document.getElementById('parent-whatsapp').value.trim();
+            const bestTime = document.getElementById('best-time').value;
+
+            // Mobile number validation
+            const digitsOnly = phoneNumber.replace(/\D/g, '');
+            const isValidChar = /^[0-9\s\-\(\)\+]+$/.test(phoneNumber);
+            const errorEl = document.getElementById('whatsapp-error');
+            const inputEl = document.getElementById('parent-whatsapp');
+
+            if (!isValidChar || digitsOnly.length < 7 || digitsOnly.length > 15) {
+                // Show error
+                errorEl.classList.remove('hidden');
+                inputEl.classList.add('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+                inputEl.focus();
+                return; // Stop form submission
+            } else {
+                // Clear error if valid
+                errorEl.classList.add('hidden');
+                inputEl.classList.remove('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+            }
+
+            const whatsapp = `'${countryCode} ${phoneNumber}`;
+
+            // UI Loading State
+            submitBtn.disabled = true;
+            submitSpinner.classList.remove('hidden');
+
+            const payload = {
+                childName,
+                grade,
+                whatsapp,
+                bestTime
+            };
+
+            // Close the popup if it happens to be open when submitting
+            const popupEl = document.getElementById('apply-popup');
+            if (popupEl) {
+                popupEl.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+                popupEl.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }
+            // Keep the popup active for future views
+            scheduleNextPopup();
+
+            // Submission handler
+            function showSuccessScreen() {
+                if (successChildName) successChildName.textContent = childName;
+                bookingForm.classList.add('hidden');
+                bookingSuccess.classList.remove('hidden');
+            }
+
+            if (GOOGLE_SCRIPT_URL) {
+                // Submit to Google Sheets script Web App using urlencoded to prevent OPTIONS preflight CORS checks
+                const formData = new URLSearchParams();
+                formData.append('childName', childName);
+                formData.append('grade', grade);
+                formData.append('whatsapp', whatsapp);
+                formData.append('bestTime', bestTime);
+
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: formData.toString()
+                })
+                    .then(() => {
+                        showSuccessScreen();
+                    })
+                    .catch(err => {
+                        console.error('Submission error:', err);
+                        showSuccessScreen();
+                    });
+            } else {
+                // Fallback Mock Mode: Save locally in localStorage for testing
+                const payload = { childName, grade, whatsapp, bestTime };
+                const existingLeads = JSON.parse(localStorage.getItem('auraMindsLeads') || '[]');
+                payload.timestamp = new Date().toISOString();
+                existingLeads.push(payload);
+                localStorage.setItem('auraMindsLeads', JSON.stringify(existingLeads));
+
+                console.log('Lead captured in mock mode:', payload);
+
+                // Add a small 600ms network delay simulation for professional feedback
+                setTimeout(() => {
+                    showSuccessScreen();
+                }, 600);
+            }
+        });
     </script>
+</body>
 
-
-</body></html>
+</html>
